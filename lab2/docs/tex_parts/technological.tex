@@ -1,0 +1,183 @@
+\chapter{Технологическая часть}
+
+\section{Средства реализации}
+
+Для реализации данной лабораторной работы был выбран язык C++, так как он содержит необходимые средства для реализации алгоритмов. 
+
+\section{Реализация алгоритмов}
+
+В листингах \ref{lst:standart}, \ref{lst:standartOpt}, \ref{lst:vinograd}, \ref{lst:vinogradOpt}  представлены реализации алгоритмов перемножения матриц.
+
+\begin{lstlisting}[label=lst:standart,caption=Стандартный алгоритм перемножения матриц]
+Matrix StandartAlgorithm::execute() {
+	auto c = initMatrix(m, q);
+	for (auto i = 0; i < m; ++i) {
+		for (auto j = 0; j < q; ++j) {
+			c[i][j] = 0;
+			for (auto k = 0; k < n; ++k) {
+				c[i][j] = c[i][j] + a[i][k] * b[k][j];
+			}
+		}
+	}
+	return c;
+}
+\end{lstlisting}
+
+\begin{lstlisting}[label=lst:standartOpt,caption=Стандартный алгоритм с оптимизациями]
+Matrix StandartOptimisedAlgorithm::execute() {
+	auto c = initMatrix(m, q);
+	for (auto i = 0; i < m; ++i) {
+		for (auto j = 0; j < q; ++j) {
+			c[i][j] = a[i][0] * b[0][j];
+			for (auto k = 1; k < n; ++k) {
+				c[i][j] += a[i][k] * b[k][j];
+			}
+		}
+	}
+	return c;
+}
+\end{lstlisting}
+
+\begin{lstlisting}[label=lst:vinograd,caption=Алгоритм Винограда]
+Matrix VinogradAlgorithm::execute() {
+	auto c = initMatrix(m, q);
+	for (auto i = 0; i < m; ++i) {
+		mulR[i] = 0;
+		for (auto k = 0; k < n / 2; ++k) {
+			mulR[i] = mulR[i] + a[i][2 * k] * a[i][2 * k + 1];
+		}
+	}
+	for (auto j = 0; j < q; ++j) {
+		mulC[j] = 0;
+		for (auto k = 0; k < n / 2; ++k) {
+			mulC[j] = mulC[j] + b[2 * k][j] * b[2 * k + 1][j];
+		}
+	}
+	for (auto i = 0; i < m; ++i) {
+		for (auto j = 0; j < q; ++j) {
+			c[i][j] = -mulR[i] - mulC[j];
+			for (auto k = 0; k < n / 2; ++k) {
+				c[i][j] = c[i][j] + (a[i][2 * k] + b[2 * k + 1][j]) * (a[i][2 * k + 1] + b[2 * k][j]);
+			}
+			if (n % 2 == 1) {
+				c[i][j] = c[i][j] + a[i][n - 1] * b[n - 1][j];
+			}
+		}
+	}
+	return c;
+}
+\end{lstlisting}
+
+\begin{lstlisting}[label=lst:vinogradOpt,caption=Алгоритм Винограда с оптимизациями]
+Matrix VinogradOptimisedAlgorithm::execute() {
+	auto c = initMatrix(m, q);
+	for (auto i = 0; i < m; ++i) {
+		if (n > 1) {
+			mulR[i] = a[i][0] * a[i][1];
+		} else {
+			mulR[i] = 0;
+		}
+		for (auto k = 1; k < n / 2; ++k) {
+			mulR[i] += a[i][k << 1] * a[i][(k << 1) + 1];
+		}
+	}
+	for (auto j = 0; j < q; ++j) {
+		if (n > 1) {
+			mulC[j] = b[0][j] * b[1][j];
+		} else {
+			mulC[j] = 0;
+		}
+		for (auto k = 1; k < n / 2; ++k) {
+			mulC[j] += b[k << 1][j] * b[(k << 1) + 1][j];
+		}
+	}
+	for (auto i = 0; i < m; ++i) {
+		for (auto j = 0; j < q; ++j) {
+			if (n > 1) {
+				c[i][j] = (a[i][0] + b[1][j]) * (a[i][1] + b[0][j]) - mulR[i] - mulC[j];
+			} else {
+				c[i][j] = -mulR[i] - mulC[j];
+			}
+			for (auto k = 1; k < n / 2; ++k) {
+				c[i][j] += (a[i][k << 1] + b[(k << 1) + 1][j]) * (a[i][(k << 1) + 1] + b[k << 1][j]);
+			}
+			if (n % 2 == 1) {
+				c[i][j] += a[i][n - 1] * b[n - 1][j];
+			}
+		}
+	}
+	return c;
+}
+\end{lstlisting}
+
+\section{Функциональные тесты}
+
+В таблице \ref{tab} представлены функциональные тесты. Для матриц a и b сначала вводятся их размеры. В результате каждый из алгоритмов успешно прошел все тесты.
+
+\begin{table}[h!]
+	\small
+	\caption{\label{tab}Результаты выполнения функциональных тестов}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			№  & \makecell{Матрица a} & \makecell{Матрица b} & \makecell{Результат\\(матрица c\\или ошибка)} & \makecell{Описание теста}\\  
+			\hline
+			1  & -1 &  & \makecell{Ошибка:\\Некорректный\\размер} & \makecell{Ошибка в\\размере}\\ 
+			\hline
+			2  & \makecell{2 2\\2 2\\2 2} & \makecell{3 2} & \makecell{Ошибка:\\Операция\\недопустима} & \makecell{Разные\\размеры}\\ 
+			\hline
+			3  & \makecell{1 1\\3} & \makecell{1 1\\3} & \makecell{9} & \makecell{Минимальный\\размер}\\ 
+			\hline
+			4  & \makecell{2 2\\1 2\\3 4} & \makecell{2 2\\5 6\\7 8} & \makecell{19 22\\43 50} & \makecell{Квадратные\\матрицы}\\ 
+			\hline
+			5  & \makecell{3 2\\1 2\\3 4\\5 6} & \makecell{2 4\\1 2 3 4\\5 6 7 8} & \makecell{11 14 17 20\\23 30 37 44\\35 46 57 68} & \makecell{Разные\\матрицы}\\ 
+			\hline
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\section{Оценка ресурсной эффективности}
+
+Так как по модели вычислений операции выделения памяти не учитываются, то стоимость строки создания матрицы c принимается за 0. Также не учитывается стоимость возврата значения.
+
+Для стандартного алгоритма перемножения матриц (листинг \ref{lst:standart}) трудоёмкость равна $1 + 1 + m * (1 + 1 + 1 + 1 + q * (1 + 1 + 3 + 1 + 1 + n * (1 + 1 + 12))) = 2 + m * (4 + q * (7 + 14n) = 14mnq + 7mq + 4m + 2$.
+
+Для стандартного алгоритма с оптимизациями (листинг \ref{lst:standartOpt}) трудоёмкость равна $1 + 1 + m * (1 + 1 + 1 + 1 + q * (1 + 1 + 10 + 1 + 1 + (n - 1) * (1 + 1 + 9))) = 2 + m * (4 + q * (3 + 11n) = 11mnq + 3mq + 4m + 2$.
+
+Для алгоритма Винограда (листинг \ref{lst:vinograd}) трудоёмкость равна $1 + 1 + m * (1 + 1 + 1 + 1 + 3 + \frac{n}{2} * (1 + 3 + 15)) + 1 + 1 + q * (1 + 1 + 1 + 1 + 3 + \frac{n}{2} * (1 + 3 + 15)) + 1 + 1 + m * (1 + 1 + 1 + 1 + q * (1 + 1 + 6 + 1 + 3 + \frac{n}{2} * (1 + 3 + 28) + 3 + 
+	\begin{cases}
+		0 & \text{, n четное, лучший случай (л. с.)}\\
+		14 & \text{, n нечетное, худший случай (х. с.)} \\
+	\end{cases}
+	)) = 2 + 7m + \frac{19n}{2} + 2 + 7q + \frac{19n}{2} + 2 + m * (4 + q * (12 + 16n + 
+	\begin{cases}
+		0 & \text{, л. с.}\\
+		14 & \text{, х. с.} \\
+	\end{cases}
+	)) = 16mnq + 
+	\begin{cases}
+		12 & \text{, л. с.}\\
+		26 & \text{, х. с.} \\
+	\end{cases} mq + \frac{19nq}{2} + \frac{19mn}{2} + 11m + 7q + 6$.
+
+В следующем расчете предполагается, что $n = 1$ (минимальный общий размер у матриц). Это позволяет избавиться от рассмотрения лишних случаев в трёх условных операторах. Для алгоритма Винограда с оптимизациями (листинг \ref{lst:vinogradOpt}) трудоёмкость равна $1 + 1 + m * (1 + 1 + 7 + 1 + 3 + (\frac{n}{2} - 1) * (1 + 3 + 11)) + 1 + 1 + q * (1 + 1 + 7 + 1 + 3 + (\frac{n}{2} - 1) * (1 + 3 + 11)) + 1 + 1 + m * (1 + 1 + 1 + 1 + q * (1 + 1 + 20 + 1 + 3 + (\frac{n}{2} - 1) * (1 + 3 + 21) + 3 + 
+\begin{cases}
+	0 & \text{, n четное, лучший случай (л. с.)}\\
+	11 & \text{, n нечетное, худший случай (х. с.)} \\
+\end{cases}
+)) = 2 - 2m + \frac{15n}{2} + 2 - 2q + \frac{15n}{2} + 2 + m * (4 + q * (-13 + \frac{25n}{2} + 
+\begin{cases}
+	0 & \text{, л. с.}\\
+	11 & \text{, х. с.} \\
+\end{cases}
+)) = \frac{25mnq}{2} - 
+\begin{cases}
+	13 & \text{, л. с.}\\
+	2 & \text{, х. с.} \\
+\end{cases} mq + \frac{15nq}{2} + \frac{15mn}{2} + 2m - 2q + 6$.
+
+Если принять m, n и q равными, то при больших размерах матрицы наименее трудоёмким должен быть оптимизированный стандартный алгоритм, и только затем оптимизированный алгоритм Винограда. Это связано с тем, что в последнем не были решены главные проблемы, такие как деление на 2 на каждой итерации, а также умножение индексов на 2 было заменено на побитовый сдвиг, а не убрано.
+
+\section{Вывод}
+
+В данном разделе был выбран язык программирования для написания программы, были рализованы все ранее описанные алгоритмы, описаны тесты, а также произведена оценка ресурсной эффективности алгоримтов.
