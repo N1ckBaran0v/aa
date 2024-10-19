@@ -1,0 +1,111 @@
+\chapter{Технологическая часть}
+
+\section{Средства реализации}
+
+Для реализации данной лабораторной работы был выбран язык Java, так как он содержит необходимые средства для реализации алгоритмов. 
+
+\section{Реализация алгоритмов}
+
+В листингах \ref{lst:linear} и \ref{lst:binary} представлены реализации алгоритмов поиска в массиве. В листинге \ref{lst:sort} представлена реализация алгоритма пирамидальной сортировки.
+
+\begin{lstlisting}[label=lst:linear,caption=Алгоритм линейного поиска в массиве]
+public int search(int value) {
+	var result = -1;
+	for (var i = 0; result == -1 && i < array.length; ++i) {
+		if (array[i] == value) {
+			result = i;
+		}
+	}
+	return returnsComprasionCount ? result == -1 ? array.length : result + 1 : result;
+}
+\end{lstlisting}
+
+\begin{lstlisting}[label=lst:binary,caption=Алгоритм бинарного поиска в массиве]
+public int binarySearch(int value) {
+	var left = 0;
+	var right = array.length - 1;
+	var result = -1;
+	var iterations = 0;
+	while (result == -1 && left <= right) {
+		var middle = left + ((right - left) >> 1);
+		++iterations;
+		if (array[middle] == value) {
+			result = middle;
+		} else if (value < array[middle]) {
+			++iterations;
+			right = middle - 1;
+		} else {
+			++iterations;
+			left = middle + 1;
+		}
+	}
+	return returnsComprasionCount ? iterations : result;
+}
+\end{lstlisting}
+
+\begin{lstlisting}[label=lst:sort,caption=Алгоритм пирамидальной сортировки]
+public static void sort(int[] array) {
+	for (var i = array.length >> 1; i >= 0; --i) {
+		heapify(array, i, array.length);
+	}
+	for (var i = array.length - 1; i > 0; --i) {
+		swap(array, 0, i);
+		heapify(array, 0, i);
+	}
+}
+
+private static void heapify(int[] array, int index, int size) {
+	while (index < (size >> 1)) {
+		var left = (index << 1) + 1;
+		var right = left + 1;
+		if (right >= size) {
+			if (left == size - 1 && array[index] < array[left]) {
+				swap(array, index, left);
+			}
+			break;
+		} else if (array[index] < array[left] && array[left] > array[right]) {
+			swap(array, index, left);
+			index = left;
+		} else if (array[index] < array[right]) {
+			swap(array, index, right);
+			index = right;
+		} else {
+			break;
+		}
+	}
+}
+
+private static void swap(int[] array, int i, int j) {
+	array[i] ^= array[j];
+	array[j] ^= array[i];
+	array[i] ^= array[j];
+}
+\end{lstlisting}
+
+\section{Функциональные тесты}
+
+В таблице \ref{tab:tests} представлены функциональные тесты. Тесты выполнялись для массива $[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]$. Первое число в результате показывает результат выполнения линейного поиска, второе -- бинарного.
+
+\begin{table}[h!]
+	\small
+	\caption{\label{tab:tests}Результаты выполнения функциональных тестов}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			№  & \makecell{Число} & \makecell{Ожидаемый\\вывод} & \makecell{Полученный\\вывод} & \makecell{Описание теста}\\  
+			\hline
+			1  & 1 & 0 0 & 0 0 & \makecell{Первое число}\\  
+			\hline
+			2  & 10 & 9 9 & 9 9 & \makecell{Последнее число}\\  
+			\hline
+			3  & 7 & 6 6 & 6 6 & \makecell{Иное число}\\  
+			\hline
+			4  & 11 & -1 -1 & -1 -1 & \makecell{Не найдено}\\  
+			\hline
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\section{Вывод}
+
+В данном разделе был выбран язык программирования для написания программы, были рализованы все ранее описанные алгоритмы и описаны функциональные тесты.
