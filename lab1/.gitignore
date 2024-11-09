@@ -1,16 +1,3 @@
-# IDE folders
-.vscode/
-.idea/
-
-# Cmake files
-Makefile
-CMakeCache.txt
-*.cmake 
-CMakeFiles/
-
-# c++ files
-*.exe
-
 # tex files
 *.aux
 *.bbl
@@ -23,3 +10,6 @@ CMakeFiles/
 
 # drawio files
 *.bkp
+
+# folder
+ready/

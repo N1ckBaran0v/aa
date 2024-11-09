@@ -1,0 +1,84 @@
+\chapter{Технологическая часть}
+
+\section{Средства реализации}
+
+Для реализации данной лабораторной работы был выбран язык Python, так как он содержит все необходимые средства для реализации алгоритмов.
+
+\section{Реализация алгоритмов}
+
+В листингах~\ref{lst:levRec},~\ref{lst:levItr},~\ref{lst:levMem},~\ref{lst:damItr} представлены реализации алгоритмов нахождения расстояний Левенштейна и Дамерау-Левенштейна.
+
+\begin{lstlisting}[label=lst:levRec,caption=Метод рекурсивного нахождения расстояния Левенштейна]
+def levenshteinRecursive(a, b):
+	result = len(a) + len(b)
+	if len(a) > 0 and len(b) > 0:
+		result = min(levenshteinRecursive(a[:-1], b) + 1, levenshteinRecursive(a, b[:-1]) + 1, levenshteinRecursive(a[:-1], b[:-1]) + (a[-1] != b[-1]))
+	return result
+\end{lstlisting}
+
+\begin{lstlisting}[label=lst:levMem,caption=Метод рекурсивного нахождения расстояния Левенштейна с мемоизацией]
+def levenshteinMemoised(a, b, cache = None):
+	if cache is None:
+		cache = [[-1 for j in range(len(b) + 1)] for i in range(len(a) + 1)]
+	result = len(a) + len(b)
+	if cache[len(a)][len(b)] != -1:
+		result = cache[len(a)][len(b)]
+	elif len(a) > 0 and len(b) > 0:
+		result = min(levenshteinMemoised(a[:-1], b, cache) + 1, levenshteinMemoised(a, b[:-1], cache) + 1, levenshteinMemoised(a[:-1], b[:-1], cache) + (a[-1] != b[-1]))
+	cache[len(a)][len(b)] = result
+	return result
+\end{lstlisting}
+
+\begin{lstlisting}[label=lst:levItr,caption=Метод матричного нахождения расстояния Левенштейна]
+def levenshteinTable(a, b):
+	table = [[i + j for j in range(len(b) + 1)] for i in range(len(a) + 1)]
+	for i in range(1, len(a) + 1):
+		for j in range(1, len(b) + 1):
+			table[i][j] = min(table[i - 1][j] + 1, table[i][j - 1] + 1, table[i - 1][j - 1] + (a[i - 1] != b[j - 1]))
+	return table[-1][-1]
+\end{lstlisting}
+
+\begin{lstlisting}[label=lst:damItr,caption=Метод матричного нахождения расстояния Дамерау-Левенштейна]
+def damerauLevenshtein(a, b):
+	table = [[i + j for j in range(len(b) + 1)] for i in range(len(a) + 1)]
+	for i in range(1, len(a) + 1):
+		for j in range(1, len(b) + 1):
+			table[i][j] = min(table[i - 1][j] + 1, table[i][j - 1] + 1,table[i - 1][j - 1] + (a[i - 1] != b[j - 1]))
+			if i > 1 and j > 1 and a[i - 1] == b[j - 2] and a[i - 2] == b[j - 1]:
+				table[i][j] = min(table[i][j], table[i - 2][j - 2] + 1)
+	return table[-1][-1]
+\end{lstlisting}
+
+\section{Функциональные тесты}
+
+В таблице~\ref{tab} представлены функциональные тесты и результаты их выполнения. 4 числа в результатах означают возвращаемые значения всех 4 реализаций алгоритмов в следующем порядке: результат рекурсивной реализации алгоритма поиска расстояния Левенштейна, результат рекурсивной реализации с мемоизацией, результат матричной реализации, результат матричной реализации алгоритма поиска расстояния Дамерау-Левенштейна.
+
+\begin{table}[t!]
+	\small
+	\caption{\label{tab}Результаты выполнения функциональных тестов}
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			№  & first & second & \makecell{Ожидаемый\\результат} & \makecell{Полученный\\результат}  &  Описание теста\\  
+			\hline
+			1 & & & 0 0 0 0 & 0 0 0 0 & Пустой ввод\\
+			\hline
+			2& Слово & Слово & 0 0 0 0 & 0 0 0 0 & Одинаковые слова\\
+			\hline
+			3 & один & семь & 4 4 4 4 & 4 4 4 4 & \makecell{Слова, не имеющие\\ни одной одинаковой\\буквы}\\
+			\hline
+			4 & бобер & ребро & 4 4 4 4 & 4 4 4 4 & \makecell{Слова, имеющие одинаковые\\расстояния Левенштейна\\и Дамерау-Левенштейна}\\
+			\hline
+			5 & лоск & локс & 2 2 2 1 & 2 2 2 1 & \makecell{Слова, имеющие различные\\расстояния Левенштейна\\и Дамерау-Левенштейна}\\
+			\hline
+			6 & белка & лак & 4 4 4 3 & 4 4 4 3 & \makecell{Первое слово длиннее второго}\\
+			\hline
+			7 & лак & белка & 4 4 4 3 & 4 4 4 3 & \makecell{Второе слово длиннее первого}\\
+			\hline
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\section{Вывод}
+
+В данном разделе был выбран язык программирования для написания программы, были реализованы все ранее описанные алгоритмы, а также были описаны тесты с ожидаемым и полученным результатом.
