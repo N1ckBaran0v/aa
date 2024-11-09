@@ -1,0 +1,15 @@
+# tex files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.gz
+*.toc
+*.dvi
+
+# drawio files
+*.bkp
+
+# folder
+ready/
