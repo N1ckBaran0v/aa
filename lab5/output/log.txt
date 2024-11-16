@@ -1,0 +1,1600 @@
+1 & 885.379900929 & 1 & $created$\\
+\hline
+2 & 885.381129028 & 1 & $start\_read$\\
+\hline
+3 & 885.381400869 & 2 & $created$\\
+\hline
+4 & 885.381602296 & 3 & $created$\\
+\hline
+5 & 885.381762032 & 4 & $created$\\
+\hline
+6 & 885.381929744 & 5 & $created$\\
+\hline
+7 & 885.382106925 & 6 & $created$\\
+\hline
+8 & 885.382292576 & 7 & $created$\\
+\hline
+9 & 885.382457133 & 8 & $created$\\
+\hline
+10 & 885.382616095 & 9 & $created$\\
+\hline
+11 & 885.382774171 & 10 & $created$\\
+\hline
+12 & 885.382947109 & 11 & $created$\\
+\hline
+13 & 885.383266094 & 12 & $created$\\
+\hline
+14 & 885.383437912 & 13 & $created$\\
+\hline
+15 & 885.383605174 & 14 & $created$\\
+\hline
+16 & 885.383773931 & 15 & $created$\\
+\hline
+17 & 885.383937595 & 16 & $created$\\
+\hline
+18 & 885.384098043 & 17 & $created$\\
+\hline
+19 & 885.384294485 & 18 & $created$\\
+\hline
+20 & 885.384452061 & 19 & $created$\\
+\hline
+21 & 885.384605330 & 20 & $created$\\
+\hline
+22 & 885.384759638 & 21 & $created$\\
+\hline
+23 & 885.384939686 & 22 & $created$\\
+\hline
+24 & 885.385106816 & 23 & $created$\\
+\hline
+25 & 885.385268613 & 24 & $created$\\
+\hline
+26 & 885.385423387 & 25 & $created$\\
+\hline
+27 & 885.385576584 & 26 & $created$\\
+\hline
+28 & 885.385735868 & 27 & $created$\\
+\hline
+29 & 885.385894967 & 28 & $created$\\
+\hline
+30 & 885.386055272 & 29 & $created$\\
+\hline
+31 & 885.386213250 & 30 & $created$\\
+\hline
+32 & 885.386428545 & 31 & $created$\\
+\hline
+33 & 885.386596285 & 32 & $created$\\
+\hline
+34 & 885.386746333 & 33 & $created$\\
+\hline
+35 & 885.386896409 & 34 & $created$\\
+\hline
+36 & 885.387066017 & 35 & $created$\\
+\hline
+37 & 885.387213973 & 36 & $created$\\
+\hline
+38 & 885.387362113 & 37 & $created$\\
+\hline
+39 & 885.387518869 & 38 & $created$\\
+\hline
+40 & 885.387670849 & 39 & $created$\\
+\hline
+41 & 885.387822403 & 40 & $created$\\
+\hline
+42 & 885.387967691 & 41 & $created$\\
+\hline
+43 & 885.388129570 & 42 & $created$\\
+\hline
+44 & 885.388332777 & 43 & $created$\\
+\hline
+45 & 885.388483601 & 44 & $created$\\
+\hline
+46 & 885.388632244 & 45 & $created$\\
+\hline
+47 & 885.388820569 & 46 & $created$\\
+\hline
+48 & 885.388965038 & 47 & $created$\\
+\hline
+49 & 885.389141074 & 48 & $created$\\
+\hline
+50 & 885.389350554 & 49 & $created$\\
+\hline
+51 & 885.389526362 & 50 & $created$\\
+\hline
+52 & 885.389680785 & 51 & $created$\\
+\hline
+53 & 885.389827980 & 52 & $created$\\
+\hline
+54 & 885.389979643 & 53 & $created$\\
+\hline
+55 & 885.390141056 & 54 & $created$\\
+\hline
+56 & 885.390292729 & 55 & $created$\\
+\hline
+57 & 885.390441565 & 56 & $created$\\
+\hline
+58 & 885.390589925 & 57 & $created$\\
+\hline
+59 & 885.390732621 & 58 & $created$\\
+\hline
+60 & 885.390876785 & 59 & $created$\\
+\hline
+61 & 885.391032381 & 60 & $created$\\
+\hline
+62 & 885.391184265 & 61 & $created$\\
+\hline
+63 & 885.391327970 & 62 & $created$\\
+\hline
+64 & 885.391475940 & 63 & $created$\\
+\hline
+65 & 885.391643997 & 64 & $created$\\
+\hline
+66 & 885.391816881 & 65 & $created$\\
+\hline
+67 & 885.391959106 & 66 & $created$\\
+\hline
+68 & 885.392350761 & 67 & $created$\\
+\hline
+69 & 885.392514145 & 68 & $created$\\
+\hline
+70 & 885.392660373 & 69 & $created$\\
+\hline
+71 & 885.392834813 & 70 & $created$\\
+\hline
+72 & 885.393201197 & 71 & $created$\\
+\hline
+73 & 885.393538086 & 72 & $created$\\
+\hline
+74 & 885.393750242 & 73 & $created$\\
+\hline
+75 & 885.394118472 & 74 & $created$\\
+\hline
+76 & 885.394288647 & 75 & $created$\\
+\hline
+77 & 885.394460136 & 76 & $created$\\
+\hline
+78 & 885.394615435 & 77 & $created$\\
+\hline
+79 & 885.394753361 & 78 & $created$\\
+\hline
+80 & 885.394895744 & 79 & $created$\\
+\hline
+81 & 885.395038720 & 80 & $created$\\
+\hline
+82 & 885.395175609 & 81 & $created$\\
+\hline
+83 & 885.395321944 & 82 & $created$\\
+\hline
+84 & 885.395455488 & 83 & $created$\\
+\hline
+85 & 885.395589493 & 84 & $created$\\
+\hline
+86 & 885.395724045 & 85 & $created$\\
+\hline
+87 & 885.395861003 & 86 & $created$\\
+\hline
+88 & 885.395997089 & 87 & $created$\\
+\hline
+89 & 885.396136821 & 88 & $created$\\
+\hline
+90 & 885.396266164 & 89 & $created$\\
+\hline
+91 & 885.396404231 & 90 & $created$\\
+\hline
+92 & 885.396535131 & 91 & $created$\\
+\hline
+93 & 885.396665580 & 92 & $created$\\
+\hline
+94 & 885.396798148 & 93 & $created$\\
+\hline
+95 & 885.396933153 & 94 & $created$\\
+\hline
+96 & 885.397076292 & 95 & $created$\\
+\hline
+97 & 885.397211955 & 96 & $created$\\
+\hline
+98 & 885.397401006 & 97 & $created$\\
+\hline
+99 & 885.397547262 & 98 & $created$\\
+\hline
+100 & 885.397683680 & 99 & $created$\\
+\hline
+101 & 885.397822610 & 100 & $created$\\
+\hline
+102 & 885.562970298 & 1 & $end\_read$\\
+\hline
+103 & 885.563318635 & 2 & $start\_read$\\
+\hline
+104 & 885.563382485 & 1 & $start\_parse$\\
+\hline
+105 & 885.676729302 & 2 & $end\_read$\\
+\hline
+106 & 885.677157948 & 3 & $start\_read$\\
+\hline
+107 & 885.725898633 & 3 & $end\_read$\\
+\hline
+108 & 885.726198070 & 4 & $start\_read$\\
+\hline
+109 & 885.775720492 & 4 & $end\_read$\\
+\hline
+110 & 885.775922750 & 5 & $start\_read$\\
+\hline
+111 & 885.784913434 & 1 & $end\_parse$\\
+\hline
+112 & 885.785048402 & 2 & $start\_parse$\\
+\hline
+113 & 885.785105753 & 1 & $start\_save$\\
+\hline
+114 & 885.835424313 & 5 & $end\_read$\\
+\hline
+115 & 885.835658841 & 6 & $start\_read$\\
+\hline
+116 & 885.910724128 & 6 & $end\_read$\\
+\hline
+117 & 885.911038112 & 7 & $start\_read$\\
+\hline
+118 & 885.925156451 & 1 & $end\_save$\\
+\hline
+119 & 885.925414559 & 1 & $destroyed$\\
+\hline
+120 & 885.954935202 & 7 & $end\_read$\\
+\hline
+121 & 885.955132609 & 8 & $start\_read$\\
+\hline
+122 & 885.994834839 & 8 & $end\_read$\\
+\hline
+123 & 885.994995180 & 9 & $start\_read$\\
+\hline
+124 & 886.044730283 & 9 & $end\_read$\\
+\hline
+125 & 886.045034256 & 10 & $start\_read$\\
+\hline
+126 & 886.097727173 & 10 & $end\_read$\\
+\hline
+127 & 886.098117942 & 11 & $start\_read$\\
+\hline
+128 & 886.127749681 & 2 & $end\_parse$\\
+\hline
+129 & 886.128069051 & 3 & $start\_parse$\\
+\hline
+130 & 886.128098804 & 2 & $start\_save$\\
+\hline
+131 & 886.136462704 & 2 & $end\_save$\\
+\hline
+132 & 886.136781639 & 2 & $destroyed$\\
+\hline
+133 & 886.147426673 & 11 & $end\_read$\\
+\hline
+134 & 886.147762112 & 12 & $start\_read$\\
+\hline
+135 & 886.212247454 & 12 & $end\_read$\\
+\hline
+136 & 886.212453357 & 13 & $start\_read$\\
+\hline
+137 & 886.259164036 & 13 & $end\_read$\\
+\hline
+138 & 886.259442143 & 14 & $start\_read$\\
+\hline
+139 & 886.321514930 & 3 & $end\_parse$\\
+\hline
+140 & 886.321761326 & 4 & $start\_parse$\\
+\hline
+141 & 886.321765436 & 3 & $start\_save$\\
+\hline
+142 & 886.328248163 & 3 & $end\_save$\\
+\hline
+143 & 886.328369043 & 3 & $destroyed$\\
+\hline
+144 & 886.371109899 & 14 & $end\_read$\\
+\hline
+145 & 886.371356576 & 15 & $start\_read$\\
+\hline
+146 & 886.420129567 & 15 & $end\_read$\\
+\hline
+147 & 886.420286630 & 16 & $start\_read$\\
+\hline
+148 & 886.451883158 & 16 & $end\_read$\\
+\hline
+149 & 886.452136468 & 17 & $start\_read$\\
+\hline
+150 & 886.486737735 & 17 & $end\_read$\\
+\hline
+151 & 886.486884730 & 18 & $start\_read$\\
+\hline
+152 & 886.511183719 & 4 & $end\_parse$\\
+\hline
+153 & 886.511336832 & 5 & $start\_parse$\\
+\hline
+154 & 886.511349415 & 4 & $start\_save$\\
+\hline
+155 & 886.517712952 & 4 & $end\_save$\\
+\hline
+156 & 886.517838798 & 4 & $destroyed$\\
+\hline
+157 & 886.524885249 & 18 & $end\_read$\\
+\hline
+158 & 886.525150818 & 19 & $start\_read$\\
+\hline
+159 & 886.567044981 & 19 & $end\_read$\\
+\hline
+160 & 886.567218424 & 20 & $start\_read$\\
+\hline
+161 & 886.598696602 & 20 & $end\_read$\\
+\hline
+162 & 886.598935592 & 21 & $start\_read$\\
+\hline
+163 & 886.625094382 & 21 & $end\_read$\\
+\hline
+164 & 886.625238971 & 22 & $start\_read$\\
+\hline
+165 & 886.659935162 & 22 & $end\_read$\\
+\hline
+166 & 886.660164690 & 23 & $start\_read$\\
+\hline
+167 & 886.672334837 & 5 & $end\_parse$\\
+\hline
+168 & 886.672475991 & 6 & $start\_parse$\\
+\hline
+169 & 886.672485982 & 5 & $start\_save$\\
+\hline
+170 & 886.679104467 & 5 & $end\_save$\\
+\hline
+171 & 886.679311313 & 5 & $destroyed$\\
+\hline
+172 & 886.690017718 & 23 & $end\_read$\\
+\hline
+173 & 886.690150072 & 24 & $start\_read$\\
+\hline
+174 & 886.718677869 & 24 & $end\_read$\\
+\hline
+175 & 886.718964121 & 25 & $start\_read$\\
+\hline
+176 & 886.757085595 & 25 & $end\_read$\\
+\hline
+177 & 886.757275134 & 26 & $start\_read$\\
+\hline
+178 & 886.795242928 & 26 & $end\_read$\\
+\hline
+179 & 886.795449526 & 27 & $start\_read$\\
+\hline
+180 & 886.800824227 & 6 & $end\_parse$\\
+\hline
+181 & 886.800932929 & 7 & $start\_parse$\\
+\hline
+182 & 886.800938929 & 6 & $start\_save$\\
+\hline
+183 & 886.807345767 & 6 & $end\_save$\\
+\hline
+184 & 886.807456300 & 6 & $destroyed$\\
+\hline
+185 & 886.831575513 & 27 & $end\_read$\\
+\hline
+186 & 886.831794787 & 28 & $start\_read$\\
+\hline
+187 & 886.864087858 & 28 & $end\_read$\\
+\hline
+188 & 886.864221110 & 29 & $start\_read$\\
+\hline
+189 & 886.897244653 & 29 & $end\_read$\\
+\hline
+190 & 886.897376364 & 30 & $start\_read$\\
+\hline
+191 & 886.921205105 & 30 & $end\_read$\\
+\hline
+192 & 886.921424084 & 31 & $start\_read$\\
+\hline
+193 & 886.933316199 & 7 & $end\_parse$\\
+\hline
+194 & 886.933450595 & 8 & $start\_parse$\\
+\hline
+195 & 886.933456007 & 7 & $start\_save$\\
+\hline
+196 & 886.939535306 & 7 & $end\_save$\\
+\hline
+197 & 886.939685947 & 7 & $destroyed$\\
+\hline
+198 & 886.946610085 & 31 & $end\_read$\\
+\hline
+199 & 886.946713887 & 32 & $start\_read$\\
+\hline
+200 & 886.975811141 & 32 & $end\_read$\\
+\hline
+201 & 886.976049771 & 33 & $start\_read$\\
+\hline
+202 & 887.008257802 & 33 & $end\_read$\\
+\hline
+203 & 887.008524608 & 34 & $start\_read$\\
+\hline
+204 & 887.041390568 & 34 & $end\_read$\\
+\hline
+205 & 887.041748687 & 35 & $start\_read$\\
+\hline
+206 & 887.068349979 & 35 & $end\_read$\\
+\hline
+207 & 887.068598591 & 36 & $start\_read$\\
+\hline
+208 & 887.078698805 & 8 & $end\_parse$\\
+\hline
+209 & 887.078870569 & 9 & $start\_parse$\\
+\hline
+210 & 887.078876299 & 8 & $start\_save$\\
+\hline
+211 & 887.088386078 & 8 & $end\_save$\\
+\hline
+212 & 887.088621821 & 8 & $destroyed$\\
+\hline
+213 & 887.101581027 & 36 & $end\_read$\\
+\hline
+214 & 887.101796675 & 37 & $start\_read$\\
+\hline
+215 & 887.141962676 & 37 & $end\_read$\\
+\hline
+216 & 887.142090618 & 38 & $start\_read$\\
+\hline
+217 & 887.178922687 & 38 & $end\_read$\\
+\hline
+218 & 887.179153910 & 39 & $start\_read$\\
+\hline
+219 & 887.207714872 & 39 & $end\_read$\\
+\hline
+220 & 887.207835211 & 40 & $start\_read$\\
+\hline
+221 & 887.218754115 & 9 & $end\_parse$\\
+\hline
+222 & 887.218995804 & 10 & $start\_parse$\\
+\hline
+223 & 887.219006427 & 9 & $start\_save$\\
+\hline
+224 & 887.225366314 & 9 & $end\_save$\\
+\hline
+225 & 887.225501589 & 9 & $destroyed$\\
+\hline
+226 & 887.237381476 & 40 & $end\_read$\\
+\hline
+227 & 887.237478999 & 41 & $start\_read$\\
+\hline
+228 & 887.268616057 & 41 & $end\_read$\\
+\hline
+229 & 887.268844344 & 42 & $start\_read$\\
+\hline
+230 & 887.346878006 & 42 & $end\_read$\\
+\hline
+231 & 887.347141729 & 43 & $start\_read$\\
+\hline
+232 & 887.361111103 & 10 & $end\_parse$\\
+\hline
+233 & 887.361263899 & 11 & $start\_parse$\\
+\hline
+234 & 887.361279657 & 10 & $start\_save$\\
+\hline
+235 & 887.369485755 & 10 & $end\_save$\\
+\hline
+236 & 887.369595900 & 10 & $destroyed$\\
+\hline
+237 & 887.391664762 & 43 & $end\_read$\\
+\hline
+238 & 887.391748049 & 44 & $start\_read$\\
+\hline
+239 & 887.470343924 & 44 & $end\_read$\\
+\hline
+240 & 887.470457881 & 45 & $start\_read$\\
+\hline
+241 & 887.490253158 & 11 & $end\_parse$\\
+\hline
+242 & 887.490366963 & 12 & $start\_parse$\\
+\hline
+243 & 887.490374859 & 11 & $start\_save$\\
+\hline
+244 & 887.497710478 & 11 & $end\_save$\\
+\hline
+245 & 887.497893909 & 11 & $destroyed$\\
+\hline
+246 & 887.506152335 & 45 & $end\_read$\\
+\hline
+247 & 887.506243043 & 46 & $start\_read$\\
+\hline
+248 & 887.536620156 & 46 & $end\_read$\\
+\hline
+249 & 887.536745054 & 47 & $start\_read$\\
+\hline
+250 & 887.567282855 & 47 & $end\_read$\\
+\hline
+251 & 887.567443521 & 48 & $start\_read$\\
+\hline
+252 & 887.599809141 & 48 & $end\_read$\\
+\hline
+253 & 887.599957413 & 49 & $start\_read$\\
+\hline
+254 & 887.614014775 & 12 & $end\_parse$\\
+\hline
+255 & 887.614171221 & 13 & $start\_parse$\\
+\hline
+256 & 887.614173061 & 12 & $start\_save$\\
+\hline
+257 & 887.620139279 & 12 & $end\_save$\\
+\hline
+258 & 887.620355538 & 12 & $destroyed$\\
+\hline
+259 & 887.636171079 & 49 & $end\_read$\\
+\hline
+260 & 887.636289492 & 50 & $start\_read$\\
+\hline
+261 & 887.673885567 & 50 & $end\_read$\\
+\hline
+262 & 887.674020032 & 51 & $start\_read$\\
+\hline
+263 & 887.722157755 & 13 & $end\_parse$\\
+\hline
+264 & 887.722382501 & 14 & $start\_parse$\\
+\hline
+265 & 887.722387106 & 13 & $start\_save$\\
+\hline
+266 & 887.728313060 & 13 & $end\_save$\\
+\hline
+267 & 887.728389069 & 13 & $destroyed$\\
+\hline
+268 & 887.737316680 & 51 & $end\_read$\\
+\hline
+269 & 887.737411963 & 52 & $start\_read$\\
+\hline
+270 & 887.783410865 & 52 & $end\_read$\\
+\hline
+271 & 887.783517844 & 53 & $start\_read$\\
+\hline
+272 & 887.827063470 & 53 & $end\_read$\\
+\hline
+273 & 887.827299294 & 54 & $start\_read$\\
+\hline
+274 & 887.857325796 & 54 & $end\_read$\\
+\hline
+275 & 887.857450815 & 55 & $start\_read$\\
+\hline
+276 & 887.883452789 & 55 & $end\_read$\\
+\hline
+277 & 887.883595829 & 56 & $start\_read$\\
+\hline
+278 & 887.918071366 & 56 & $end\_read$\\
+\hline
+279 & 887.918383217 & 57 & $start\_read$\\
+\hline
+280 & 887.949372742 & 57 & $end\_read$\\
+\hline
+281 & 887.949469589 & 58 & $start\_read$\\
+\hline
+282 & 887.974915107 & 58 & $end\_read$\\
+\hline
+283 & 887.975211411 & 59 & $start\_read$\\
+\hline
+284 & 887.984163482 & 14 & $end\_parse$\\
+\hline
+285 & 887.984260910 & 15 & $start\_parse$\\
+\hline
+286 & 887.984267212 & 14 & $start\_save$\\
+\hline
+287 & 887.994599219 & 14 & $end\_save$\\
+\hline
+288 & 887.994734529 & 14 & $destroyed$\\
+\hline
+289 & 888.011903764 & 59 & $end\_read$\\
+\hline
+290 & 888.011987072 & 60 & $start\_read$\\
+\hline
+291 & 888.051503284 & 60 & $end\_read$\\
+\hline
+292 & 888.051720252 & 61 & $start\_read$\\
+\hline
+293 & 888.075696327 & 61 & $end\_read$\\
+\hline
+294 & 888.075801740 & 62 & $start\_read$\\
+\hline
+295 & 888.103558984 & 62 & $end\_read$\\
+\hline
+296 & 888.103776482 & 63 & $start\_read$\\
+\hline
+297 & 888.127848585 & 63 & $end\_read$\\
+\hline
+298 & 888.128075701 & 64 & $start\_read$\\
+\hline
+299 & 888.144564632 & 15 & $end\_parse$\\
+\hline
+300 & 888.144806800 & 16 & $start\_parse$\\
+\hline
+301 & 888.144811237 & 15 & $start\_save$\\
+\hline
+302 & 888.151435670 & 15 & $end\_save$\\
+\hline
+303 & 888.151564644 & 15 & $destroyed$\\
+\hline
+304 & 888.156946366 & 64 & $end\_read$\\
+\hline
+305 & 888.157202978 & 65 & $start\_read$\\
+\hline
+306 & 888.204246674 & 65 & $end\_read$\\
+\hline
+307 & 888.204534137 & 66 & $start\_read$\\
+\hline
+308 & 888.258304237 & 66 & $end\_read$\\
+\hline
+309 & 888.258505805 & 67 & $start\_read$\\
+\hline
+310 & 888.277781389 & 16 & $end\_parse$\\
+\hline
+311 & 888.277897098 & 17 & $start\_parse$\\
+\hline
+312 & 888.277921872 & 16 & $start\_save$\\
+\hline
+313 & 888.283789233 & 16 & $end\_save$\\
+\hline
+314 & 888.283857267 & 16 & $destroyed$\\
+\hline
+315 & 888.297711617 & 67 & $end\_read$\\
+\hline
+316 & 888.297786602 & 68 & $start\_read$\\
+\hline
+317 & 888.336316806 & 68 & $end\_read$\\
+\hline
+318 & 888.336412635 & 69 & $start\_read$\\
+\hline
+319 & 888.373402526 & 69 & $end\_read$\\
+\hline
+320 & 888.373500124 & 70 & $start\_read$\\
+\hline
+321 & 888.400260210 & 17 & $end\_parse$\\
+\hline
+322 & 888.400349283 & 17 & $start\_save$\\
+\hline
+323 & 888.400349834 & 18 & $start\_parse$\\
+\hline
+324 & 888.409494390 & 17 & $end\_save$\\
+\hline
+325 & 888.409567637 & 17 & $destroyed$\\
+\hline
+326 & 888.422191293 & 70 & $end\_read$\\
+\hline
+327 & 888.422265293 & 71 & $start\_read$\\
+\hline
+328 & 888.460030716 & 71 & $end\_read$\\
+\hline
+329 & 888.460132734 & 72 & $start\_read$\\
+\hline
+330 & 888.498376195 & 72 & $end\_read$\\
+\hline
+331 & 888.498673207 & 73 & $start\_read$\\
+\hline
+332 & 888.537870705 & 73 & $end\_read$\\
+\hline
+333 & 888.537962146 & 74 & $start\_read$\\
+\hline
+334 & 888.544268053 & 18 & $end\_parse$\\
+\hline
+335 & 888.544353832 & 19 & $start\_parse$\\
+\hline
+336 & 888.544362947 & 18 & $start\_save$\\
+\hline
+337 & 888.550139443 & 18 & $end\_save$\\
+\hline
+338 & 888.550220385 & 18 & $destroyed$\\
+\hline
+339 & 888.563962740 & 74 & $end\_read$\\
+\hline
+340 & 888.564048389 & 75 & $start\_read$\\
+\hline
+341 & 888.592483365 & 75 & $end\_read$\\
+\hline
+342 & 888.592571336 & 76 & $start\_read$\\
+\hline
+343 & 888.614668479 & 76 & $end\_read$\\
+\hline
+344 & 888.614821815 & 77 & $start\_read$\\
+\hline
+345 & 888.654735273 & 77 & $end\_read$\\
+\hline
+346 & 888.654950832 & 78 & $start\_read$\\
+\hline
+347 & 888.675620257 & 78 & $end\_read$\\
+\hline
+348 & 888.675709214 & 79 & $start\_read$\\
+\hline
+349 & 888.691589254 & 19 & $end\_parse$\\
+\hline
+350 & 888.691690006 & 20 & $start\_parse$\\
+\hline
+351 & 888.691695061 & 19 & $start\_save$\\
+\hline
+352 & 888.698749846 & 19 & $end\_save$\\
+\hline
+353 & 888.698820281 & 19 & $destroyed$\\
+\hline
+354 & 888.700452249 & 79 & $end\_read$\\
+\hline
+355 & 888.700509021 & 80 & $start\_read$\\
+\hline
+356 & 888.732415440 & 80 & $end\_read$\\
+\hline
+357 & 888.732712373 & 81 & $start\_read$\\
+\hline
+358 & 888.772988199 & 81 & $end\_read$\\
+\hline
+359 & 888.773091010 & 82 & $start\_read$\\
+\hline
+360 & 888.801765905 & 82 & $end\_read$\\
+\hline
+361 & 888.801862371 & 83 & $start\_read$\\
+\hline
+362 & 888.829715751 & 20 & $end\_parse$\\
+\hline
+363 & 888.829994937 & 21 & $start\_parse$\\
+\hline
+364 & 888.830019236 & 20 & $start\_save$\\
+\hline
+365 & 888.836690116 & 20 & $end\_save$\\
+\hline
+366 & 888.836792724 & 20 & $destroyed$\\
+\hline
+367 & 888.841374735 & 83 & $end\_read$\\
+\hline
+368 & 888.841454535 & 84 & $start\_read$\\
+\hline
+369 & 888.885396551 & 84 & $end\_read$\\
+\hline
+370 & 888.885492100 & 85 & $start\_read$\\
+\hline
+371 & 888.918054491 & 85 & $end\_read$\\
+\hline
+372 & 888.918254998 & 86 & $start\_read$\\
+\hline
+373 & 888.948581119 & 86 & $end\_read$\\
+\hline
+374 & 888.948783952 & 87 & $start\_read$\\
+\hline
+375 & 888.960961675 & 21 & $end\_parse$\\
+\hline
+376 & 888.961080650 & 22 & $start\_parse$\\
+\hline
+377 & 888.961084894 & 21 & $start\_save$\\
+\hline
+378 & 888.990295263 & 87 & $end\_read$\\
+\hline
+379 & 888.990581246 & 88 & $start\_read$\\
+\hline
+380 & 888.995738580 & 21 & $end\_save$\\
+\hline
+381 & 888.995844419 & 21 & $destroyed$\\
+\hline
+382 & 889.027765749 & 88 & $end\_read$\\
+\hline
+383 & 889.027974324 & 89 & $start\_read$\\
+\hline
+384 & 889.055759372 & 89 & $end\_read$\\
+\hline
+385 & 889.056020632 & 90 & $start\_read$\\
+\hline
+386 & 889.098893258 & 90 & $end\_read$\\
+\hline
+387 & 889.099199826 & 91 & $start\_read$\\
+\hline
+388 & 889.116134650 & 22 & $end\_parse$\\
+\hline
+389 & 889.116247094 & 23 & $start\_parse$\\
+\hline
+390 & 889.116267122 & 22 & $start\_save$\\
+\hline
+391 & 889.123062988 & 22 & $end\_save$\\
+\hline
+392 & 889.123160741 & 22 & $destroyed$\\
+\hline
+393 & 889.142211741 & 91 & $end\_read$\\
+\hline
+394 & 889.142271937 & 92 & $start\_read$\\
+\hline
+395 & 889.183761020 & 92 & $end\_read$\\
+\hline
+396 & 889.183845233 & 93 & $start\_read$\\
+\hline
+397 & 889.235512479 & 23 & $end\_parse$\\
+\hline
+398 & 889.235749333 & 24 & $start\_parse$\\
+\hline
+399 & 889.235757025 & 23 & $start\_save$\\
+\hline
+400 & 889.242147221 & 23 & $end\_save$\\
+\hline
+401 & 889.242215175 & 23 & $destroyed$\\
+\hline
+402 & 889.253997656 & 93 & $end\_read$\\
+\hline
+403 & 889.254291862 & 94 & $start\_read$\\
+\hline
+404 & 889.288845694 & 94 & $end\_read$\\
+\hline
+405 & 889.289134240 & 95 & $start\_read$\\
+\hline
+406 & 889.325317573 & 95 & $end\_read$\\
+\hline
+407 & 889.325399878 & 96 & $start\_read$\\
+\hline
+408 & 889.354756351 & 96 & $end\_read$\\
+\hline
+409 & 889.354964413 & 97 & $start\_read$\\
+\hline
+410 & 889.370400977 & 24 & $end\_parse$\\
+\hline
+411 & 889.370625719 & 25 & $start\_parse$\\
+\hline
+412 & 889.370628615 & 24 & $start\_save$\\
+\hline
+413 & 889.377084316 & 24 & $end\_save$\\
+\hline
+414 & 889.378517411 & 24 & $destroyed$\\
+\hline
+415 & 889.447389050 & 97 & $end\_read$\\
+\hline
+416 & 889.447616795 & 98 & $start\_read$\\
+\hline
+417 & 889.481558537 & 98 & $end\_read$\\
+\hline
+418 & 889.481651729 & 99 & $start\_read$\\
+\hline
+419 & 889.502689385 & 25 & $end\_parse$\\
+\hline
+420 & 889.502785458 & 26 & $start\_parse$\\
+\hline
+421 & 889.502798756 & 25 & $start\_save$\\
+\hline
+422 & 889.509092614 & 25 & $end\_save$\\
+\hline
+423 & 889.509170894 & 25 & $destroyed$\\
+\hline
+424 & 889.520469143 & 99 & $end\_read$\\
+\hline
+425 & 889.520526373 & 100 & $start\_read$\\
+\hline
+426 & 889.565022120 & 100 & $end\_read$\\
+\hline
+427 & 889.621309449 & 26 & $end\_parse$\\
+\hline
+428 & 889.621404308 & 27 & $start\_parse$\\
+\hline
+429 & 889.621404416 & 26 & $start\_save$\\
+\hline
+430 & 889.628641195 & 26 & $end\_save$\\
+\hline
+431 & 889.628699083 & 26 & $destroyed$\\
+\hline
+432 & 889.747600503 & 27 & $end\_parse$\\
+\hline
+433 & 889.747693225 & 27 & $start\_save$\\
+\hline
+434 & 889.747694227 & 28 & $start\_parse$\\
+\hline
+435 & 889.756896644 & 27 & $end\_save$\\
+\hline
+436 & 889.756978230 & 27 & $destroyed$\\
+\hline
+437 & 889.858942000 & 28 & $end\_parse$\\
+\hline
+438 & 889.859042258 & 28 & $start\_save$\\
+\hline
+439 & 889.859044785 & 29 & $start\_parse$\\
+\hline
+440 & 889.867939272 & 28 & $end\_save$\\
+\hline
+441 & 889.868016169 & 28 & $destroyed$\\
+\hline
+442 & 889.967112620 & 29 & $end\_parse$\\
+\hline
+443 & 889.967198485 & 29 & $start\_save$\\
+\hline
+444 & 889.967200278 & 30 & $start\_parse$\\
+\hline
+445 & 889.976357225 & 29 & $end\_save$\\
+\hline
+446 & 889.976412478 & 29 & $destroyed$\\
+\hline
+447 & 890.065342047 & 30 & $end\_parse$\\
+\hline
+448 & 890.065482971 & 30 & $start\_save$\\
+\hline
+449 & 890.065484668 & 31 & $start\_parse$\\
+\hline
+450 & 890.070426683 & 30 & $end\_save$\\
+\hline
+451 & 890.070470340 & 30 & $destroyed$\\
+\hline
+452 & 890.171442075 & 31 & $end\_parse$\\
+\hline
+453 & 890.171508866 & 31 & $start\_save$\\
+\hline
+454 & 890.171509840 & 32 & $start\_parse$\\
+\hline
+455 & 890.183407337 & 31 & $end\_save$\\
+\hline
+456 & 890.183453754 & 31 & $destroyed$\\
+\hline
+457 & 890.285010536 & 32 & $end\_parse$\\
+\hline
+458 & 890.285086434 & 33 & $start\_parse$\\
+\hline
+459 & 890.285086500 & 32 & $start\_save$\\
+\hline
+460 & 890.294225733 & 32 & $end\_save$\\
+\hline
+461 & 890.294270005 & 32 & $destroyed$\\
+\hline
+462 & 890.414997065 & 33 & $end\_parse$\\
+\hline
+463 & 890.415073990 & 33 & $start\_save$\\
+\hline
+464 & 890.415075480 & 34 & $start\_parse$\\
+\hline
+465 & 890.424226386 & 33 & $end\_save$\\
+\hline
+466 & 890.424290178 & 33 & $destroyed$\\
+\hline
+467 & 890.530596027 & 34 & $end\_parse$\\
+\hline
+468 & 890.530676046 & 34 & $start\_save$\\
+\hline
+469 & 890.530679108 & 35 & $start\_parse$\\
+\hline
+470 & 890.536092706 & 34 & $end\_save$\\
+\hline
+471 & 890.536141580 & 34 & $destroyed$\\
+\hline
+472 & 890.639816833 & 35 & $end\_parse$\\
+\hline
+473 & 890.639920121 & 35 & $start\_save$\\
+\hline
+474 & 890.639921382 & 36 & $start\_parse$\\
+\hline
+475 & 890.645215623 & 35 & $end\_save$\\
+\hline
+476 & 890.645271644 & 35 & $destroyed$\\
+\hline
+477 & 890.758986217 & 36 & $end\_parse$\\
+\hline
+478 & 890.759069915 & 36 & $start\_save$\\
+\hline
+479 & 890.759070512 & 37 & $start\_parse$\\
+\hline
+480 & 890.764707276 & 36 & $end\_save$\\
+\hline
+481 & 890.764767186 & 36 & $destroyed$\\
+\hline
+482 & 890.868963057 & 37 & $end\_parse$\\
+\hline
+483 & 890.869033832 & 37 & $start\_save$\\
+\hline
+484 & 890.869034702 & 38 & $start\_parse$\\
+\hline
+485 & 890.876395351 & 37 & $end\_save$\\
+\hline
+486 & 890.876514012 & 37 & $destroyed$\\
+\hline
+487 & 890.992982316 & 38 & $end\_parse$\\
+\hline
+488 & 890.993072542 & 38 & $start\_save$\\
+\hline
+489 & 890.993074640 & 39 & $start\_parse$\\
+\hline
+490 & 890.998125461 & 38 & $end\_save$\\
+\hline
+491 & 890.998167336 & 38 & $destroyed$\\
+\hline
+492 & 891.113472958 & 39 & $end\_parse$\\
+\hline
+493 & 891.113535911 & 39 & $start\_save$\\
+\hline
+494 & 891.113537532 & 40 & $start\_parse$\\
+\hline
+495 & 891.118683920 & 39 & $end\_save$\\
+\hline
+496 & 891.118737246 & 39 & $destroyed$\\
+\hline
+497 & 891.227653124 & 40 & $end\_parse$\\
+\hline
+498 & 891.227725799 & 40 & $start\_save$\\
+\hline
+499 & 891.227726683 & 41 & $start\_parse$\\
+\hline
+500 & 891.233184608 & 40 & $end\_save$\\
+\hline
+501 & 891.233239197 & 40 & $destroyed$\\
+\hline
+502 & 891.352737511 & 41 & $end\_parse$\\
+\hline
+503 & 891.352805406 & 41 & $start\_save$\\
+\hline
+504 & 891.352806287 & 42 & $start\_parse$\\
+\hline
+505 & 891.357895921 & 41 & $end\_save$\\
+\hline
+506 & 891.357950187 & 41 & $destroyed$\\
+\hline
+507 & 891.573286751 & 42 & $end\_parse$\\
+\hline
+508 & 891.573349271 & 42 & $start\_save$\\
+\hline
+509 & 891.573350085 & 43 & $start\_parse$\\
+\hline
+510 & 891.578668146 & 42 & $end\_save$\\
+\hline
+511 & 891.578719364 & 42 & $destroyed$\\
+\hline
+512 & 891.696441626 & 43 & $end\_parse$\\
+\hline
+513 & 891.696640990 & 43 & $start\_save$\\
+\hline
+514 & 891.696642300 & 44 & $start\_parse$\\
+\hline
+515 & 891.703426505 & 43 & $end\_save$\\
+\hline
+516 & 891.703525241 & 43 & $destroyed$\\
+\hline
+517 & 891.916061673 & 44 & $end\_parse$\\
+\hline
+518 & 891.916142948 & 45 & $start\_parse$\\
+\hline
+519 & 891.916143046 & 44 & $start\_save$\\
+\hline
+520 & 891.921597554 & 44 & $end\_save$\\
+\hline
+521 & 891.921661931 & 44 & $destroyed$\\
+\hline
+522 & 892.023817627 & 45 & $end\_parse$\\
+\hline
+523 & 892.023871414 & 45 & $start\_save$\\
+\hline
+524 & 892.023872979 & 46 & $start\_parse$\\
+\hline
+525 & 892.028658365 & 45 & $end\_save$\\
+\hline
+526 & 892.028712523 & 45 & $destroyed$\\
+\hline
+527 & 892.154916209 & 46 & $end\_parse$\\
+\hline
+528 & 892.154977680 & 46 & $start\_save$\\
+\hline
+529 & 892.154979106 & 47 & $start\_parse$\\
+\hline
+530 & 892.160560424 & 46 & $end\_save$\\
+\hline
+531 & 892.160610578 & 46 & $destroyed$\\
+\hline
+532 & 892.285243892 & 47 & $end\_parse$\\
+\hline
+533 & 892.285310990 & 47 & $start\_save$\\
+\hline
+534 & 892.285312485 & 48 & $start\_parse$\\
+\hline
+535 & 892.290903878 & 47 & $end\_save$\\
+\hline
+536 & 892.290943012 & 47 & $destroyed$\\
+\hline
+537 & 892.402899513 & 48 & $end\_parse$\\
+\hline
+538 & 892.402954318 & 48 & $start\_save$\\
+\hline
+539 & 892.402955545 & 49 & $start\_parse$\\
+\hline
+540 & 892.407745985 & 48 & $end\_save$\\
+\hline
+541 & 892.407795062 & 48 & $destroyed$\\
+\hline
+542 & 892.519815714 & 49 & $end\_parse$\\
+\hline
+543 & 892.519913116 & 49 & $start\_save$\\
+\hline
+544 & 892.519913882 & 50 & $start\_parse$\\
+\hline
+545 & 892.525749852 & 49 & $end\_save$\\
+\hline
+546 & 892.525790351 & 49 & $destroyed$\\
+\hline
+547 & 892.634713076 & 50 & $end\_parse$\\
+\hline
+548 & 892.634770520 & 50 & $start\_save$\\
+\hline
+549 & 892.634771790 & 51 & $start\_parse$\\
+\hline
+550 & 892.639559386 & 50 & $end\_save$\\
+\hline
+551 & 892.639621700 & 50 & $destroyed$\\
+\hline
+552 & 892.847125041 & 51 & $end\_parse$\\
+\hline
+553 & 892.847203320 & 51 & $start\_save$\\
+\hline
+554 & 892.847204800 & 52 & $start\_parse$\\
+\hline
+555 & 892.852422919 & 51 & $end\_save$\\
+\hline
+556 & 892.852462748 & 51 & $destroyed$\\
+\hline
+557 & 892.970736076 & 52 & $end\_parse$\\
+\hline
+558 & 892.970824767 & 53 & $start\_parse$\\
+\hline
+559 & 892.970838003 & 52 & $start\_save$\\
+\hline
+560 & 892.976052619 & 52 & $end\_save$\\
+\hline
+561 & 892.976113466 & 52 & $destroyed$\\
+\hline
+562 & 893.094773313 & 53 & $end\_parse$\\
+\hline
+563 & 893.094876190 & 53 & $start\_save$\\
+\hline
+564 & 893.094898825 & 54 & $start\_parse$\\
+\hline
+565 & 893.100448400 & 53 & $end\_save$\\
+\hline
+566 & 893.100503879 & 53 & $destroyed$\\
+\hline
+567 & 893.230724948 & 54 & $end\_parse$\\
+\hline
+568 & 893.230829964 & 54 & $start\_save$\\
+\hline
+569 & 893.230831901 & 55 & $start\_parse$\\
+\hline
+570 & 893.235801993 & 54 & $end\_save$\\
+\hline
+571 & 893.235860719 & 54 & $destroyed$\\
+\hline
+572 & 893.346063847 & 55 & $end\_parse$\\
+\hline
+573 & 893.346147303 & 55 & $start\_save$\\
+\hline
+574 & 893.346150180 & 56 & $start\_parse$\\
+\hline
+575 & 893.351257049 & 55 & $end\_save$\\
+\hline
+576 & 893.351362054 & 55 & $destroyed$\\
+\hline
+577 & 893.450690841 & 56 & $end\_parse$\\
+\hline
+578 & 893.450772449 & 56 & $start\_save$\\
+\hline
+579 & 893.450774631 & 57 & $start\_parse$\\
+\hline
+580 & 893.455880398 & 56 & $end\_save$\\
+\hline
+581 & 893.455928775 & 56 & $destroyed$\\
+\hline
+582 & 893.569400478 & 57 & $end\_parse$\\
+\hline
+583 & 893.569469051 & 57 & $start\_save$\\
+\hline
+584 & 893.569471857 & 58 & $start\_parse$\\
+\hline
+585 & 893.574615015 & 57 & $end\_save$\\
+\hline
+586 & 893.574659057 & 57 & $destroyed$\\
+\hline
+587 & 893.678077638 & 58 & $end\_parse$\\
+\hline
+588 & 893.678165721 & 58 & $start\_save$\\
+\hline
+589 & 893.678168155 & 59 & $start\_parse$\\
+\hline
+590 & 893.683521894 & 58 & $end\_save$\\
+\hline
+591 & 893.683584661 & 58 & $destroyed$\\
+\hline
+592 & 893.784477960 & 59 & $end\_parse$\\
+\hline
+593 & 893.784540976 & 59 & $start\_save$\\
+\hline
+594 & 893.784543727 & 60 & $start\_parse$\\
+\hline
+595 & 893.789359213 & 59 & $end\_save$\\
+\hline
+596 & 893.789399779 & 59 & $destroyed$\\
+\hline
+597 & 893.888952822 & 60 & $end\_parse$\\
+\hline
+598 & 893.889051032 & 60 & $start\_save$\\
+\hline
+599 & 893.889053532 & 61 & $start\_parse$\\
+\hline
+600 & 893.894224425 & 60 & $end\_save$\\
+\hline
+601 & 893.894303125 & 60 & $destroyed$\\
+\hline
+602 & 893.994430879 & 61 & $end\_parse$\\
+\hline
+603 & 893.994509166 & 61 & $start\_save$\\
+\hline
+604 & 893.994511888 & 62 & $start\_parse$\\
+\hline
+605 & 893.999496289 & 61 & $end\_save$\\
+\hline
+606 & 893.999543793 & 61 & $destroyed$\\
+\hline
+607 & 894.112829511 & 62 & $end\_parse$\\
+\hline
+608 & 894.112910656 & 62 & $start\_save$\\
+\hline
+609 & 894.112911633 & 63 & $start\_parse$\\
+\hline
+610 & 894.117329906 & 62 & $end\_save$\\
+\hline
+611 & 894.117366021 & 62 & $destroyed$\\
+\hline
+612 & 894.211880407 & 63 & $end\_parse$\\
+\hline
+613 & 894.211966622 & 63 & $start\_save$\\
+\hline
+614 & 894.211968493 & 64 & $start\_parse$\\
+\hline
+615 & 894.216718034 & 63 & $end\_save$\\
+\hline
+616 & 894.216761675 & 63 & $destroyed$\\
+\hline
+617 & 894.327587692 & 64 & $end\_parse$\\
+\hline
+618 & 894.327652844 & 64 & $start\_save$\\
+\hline
+619 & 894.327655507 & 65 & $start\_parse$\\
+\hline
+620 & 894.332430213 & 64 & $end\_save$\\
+\hline
+621 & 894.332510494 & 64 & $destroyed$\\
+\hline
+622 & 894.448371093 & 65 & $end\_parse$\\
+\hline
+623 & 894.448438944 & 65 & $start\_save$\\
+\hline
+624 & 894.448440448 & 66 & $start\_parse$\\
+\hline
+625 & 894.456399235 & 65 & $end\_save$\\
+\hline
+626 & 894.456513631 & 65 & $destroyed$\\
+\hline
+627 & 894.577127723 & 66 & $end\_parse$\\
+\hline
+628 & 894.577184401 & 66 & $start\_save$\\
+\hline
+629 & 894.577186585 & 67 & $start\_parse$\\
+\hline
+630 & 894.581907600 & 66 & $end\_save$\\
+\hline
+631 & 894.581958678 & 66 & $destroyed$\\
+\hline
+632 & 894.683881829 & 67 & $end\_parse$\\
+\hline
+633 & 894.683935975 & 67 & $start\_save$\\
+\hline
+634 & 894.683938944 & 68 & $start\_parse$\\
+\hline
+635 & 894.688379850 & 67 & $end\_save$\\
+\hline
+636 & 894.688415876 & 67 & $destroyed$\\
+\hline
+637 & 894.787371464 & 68 & $end\_parse$\\
+\hline
+638 & 894.787432193 & 68 & $start\_save$\\
+\hline
+639 & 894.787433507 & 69 & $start\_parse$\\
+\hline
+640 & 894.791939904 & 68 & $end\_save$\\
+\hline
+641 & 894.791990695 & 68 & $destroyed$\\
+\hline
+642 & 894.888789261 & 69 & $end\_parse$\\
+\hline
+643 & 894.888910451 & 69 & $start\_save$\\
+\hline
+644 & 894.888915291 & 70 & $start\_parse$\\
+\hline
+645 & 894.893347838 & 69 & $end\_save$\\
+\hline
+646 & 894.893399500 & 69 & $destroyed$\\
+\hline
+647 & 894.986294020 & 70 & $end\_parse$\\
+\hline
+648 & 894.986348995 & 70 & $start\_save$\\
+\hline
+649 & 894.986352102 & 71 & $start\_parse$\\
+\hline
+650 & 894.990786794 & 70 & $end\_save$\\
+\hline
+651 & 894.990822566 & 70 & $destroyed$\\
+\hline
+652 & 895.115502604 & 71 & $end\_parse$\\
+\hline
+653 & 895.115560806 & 71 & $start\_save$\\
+\hline
+654 & 895.115562341 & 72 & $start\_parse$\\
+\hline
+655 & 895.120293512 & 71 & $end\_save$\\
+\hline
+656 & 895.120345812 & 71 & $destroyed$\\
+\hline
+657 & 895.226643826 & 72 & $end\_parse$\\
+\hline
+658 & 895.226678766 & 72 & $start\_save$\\
+\hline
+659 & 895.226680229 & 73 & $start\_parse$\\
+\hline
+660 & 895.231393422 & 72 & $end\_save$\\
+\hline
+661 & 895.231432329 & 72 & $destroyed$\\
+\hline
+662 & 895.351111211 & 73 & $end\_parse$\\
+\hline
+663 & 895.351171059 & 73 & $start\_save$\\
+\hline
+664 & 895.351173779 & 74 & $start\_parse$\\
+\hline
+665 & 895.355748014 & 73 & $end\_save$\\
+\hline
+666 & 895.355780525 & 73 & $destroyed$\\
+\hline
+667 & 895.452795227 & 74 & $end\_parse$\\
+\hline
+668 & 895.452841731 & 74 & $start\_save$\\
+\hline
+669 & 895.452843931 & 75 & $start\_parse$\\
+\hline
+670 & 895.457362282 & 74 & $end\_save$\\
+\hline
+671 & 895.457402455 & 74 & $destroyed$\\
+\hline
+672 & 895.582856407 & 75 & $end\_parse$\\
+\hline
+673 & 895.582918273 & 75 & $start\_save$\\
+\hline
+674 & 895.582919700 & 76 & $start\_parse$\\
+\hline
+675 & 895.587759541 & 75 & $end\_save$\\
+\hline
+676 & 895.587792492 & 75 & $destroyed$\\
+\hline
+677 & 895.665138284 & 76 & $end\_parse$\\
+\hline
+678 & 895.665186859 & 76 & $start\_save$\\
+\hline
+679 & 895.665190106 & 77 & $start\_parse$\\
+\hline
+680 & 895.669498008 & 76 & $end\_save$\\
+\hline
+681 & 895.669529742 & 76 & $destroyed$\\
+\hline
+682 & 895.767090680 & 77 & $end\_parse$\\
+\hline
+683 & 895.767145288 & 77 & $start\_save$\\
+\hline
+684 & 895.767146099 & 78 & $start\_parse$\\
+\hline
+685 & 895.772243490 & 77 & $end\_save$\\
+\hline
+686 & 895.772274639 & 77 & $destroyed$\\
+\hline
+687 & 895.859328094 & 78 & $end\_parse$\\
+\hline
+688 & 895.859376750 & 78 & $start\_save$\\
+\hline
+689 & 895.859379539 & 79 & $start\_parse$\\
+\hline
+690 & 895.863716999 & 78 & $end\_save$\\
+\hline
+691 & 895.863748986 & 78 & $destroyed$\\
+\hline
+692 & 895.972570458 & 79 & $end\_parse$\\
+\hline
+693 & 895.972616247 & 79 & $start\_save$\\
+\hline
+694 & 895.972617748 & 80 & $start\_parse$\\
+\hline
+695 & 895.977230585 & 79 & $end\_save$\\
+\hline
+696 & 895.977309425 & 79 & $destroyed$\\
+\hline
+697 & 896.095388189 & 80 & $end\_parse$\\
+\hline
+698 & 896.095443476 & 80 & $start\_save$\\
+\hline
+699 & 896.095444716 & 81 & $start\_parse$\\
+\hline
+700 & 896.100130197 & 80 & $end\_save$\\
+\hline
+701 & 896.100166493 & 80 & $destroyed$\\
+\hline
+702 & 896.211166263 & 81 & $end\_parse$\\
+\hline
+703 & 896.211217974 & 81 & $start\_save$\\
+\hline
+704 & 896.211220072 & 82 & $start\_parse$\\
+\hline
+705 & 896.216293268 & 81 & $end\_save$\\
+\hline
+706 & 896.216331490 & 81 & $destroyed$\\
+\hline
+707 & 896.325427267 & 82 & $end\_parse$\\
+\hline
+708 & 896.325475612 & 82 & $start\_save$\\
+\hline
+709 & 896.325477614 & 83 & $start\_parse$\\
+\hline
+710 & 896.329919811 & 82 & $end\_save$\\
+\hline
+711 & 896.329945759 & 82 & $destroyed$\\
+\hline
+712 & 896.443731481 & 83 & $end\_parse$\\
+\hline
+713 & 896.443785913 & 83 & $start\_save$\\
+\hline
+714 & 896.443789122 & 84 & $start\_parse$\\
+\hline
+715 & 896.448677846 & 83 & $end\_save$\\
+\hline
+716 & 896.448711093 & 83 & $destroyed$\\
+\hline
+717 & 896.557818564 & 84 & $end\_parse$\\
+\hline
+718 & 896.557867821 & 84 & $start\_save$\\
+\hline
+719 & 896.557870151 & 85 & $start\_parse$\\
+\hline
+720 & 896.562315564 & 84 & $end\_save$\\
+\hline
+721 & 896.562345183 & 84 & $destroyed$\\
+\hline
+722 & 896.648775269 & 85 & $end\_parse$\\
+\hline
+723 & 896.648840496 & 85 & $start\_save$\\
+\hline
+724 & 896.648843431 & 86 & $start\_parse$\\
+\hline
+725 & 896.653425673 & 85 & $end\_save$\\
+\hline
+726 & 896.653454696 & 85 & $destroyed$\\
+\hline
+727 & 896.767092913 & 86 & $end\_parse$\\
+\hline
+728 & 896.767165590 & 86 & $start\_save$\\
+\hline
+729 & 896.767168226 & 87 & $start\_parse$\\
+\hline
+730 & 896.771987608 & 86 & $end\_save$\\
+\hline
+731 & 896.772063730 & 86 & $destroyed$\\
+\hline
+732 & 896.887955167 & 87 & $end\_parse$\\
+\hline
+733 & 896.888012878 & 87 & $start\_save$\\
+\hline
+734 & 896.888014752 & 88 & $start\_parse$\\
+\hline
+735 & 896.892812562 & 87 & $end\_save$\\
+\hline
+736 & 896.892841126 & 87 & $destroyed$\\
+\hline
+737 & 897.007394465 & 88 & $end\_parse$\\
+\hline
+738 & 897.007431293 & 88 & $start\_save$\\
+\hline
+739 & 897.007432115 & 89 & $start\_parse$\\
+\hline
+740 & 897.011910336 & 88 & $end\_save$\\
+\hline
+741 & 897.011939572 & 88 & $destroyed$\\
+\hline
+742 & 897.112866557 & 89 & $end\_parse$\\
+\hline
+743 & 897.112931190 & 89 & $start\_save$\\
+\hline
+744 & 897.112933670 & 90 & $start\_parse$\\
+\hline
+745 & 897.117491013 & 89 & $end\_save$\\
+\hline
+746 & 897.117528616 & 89 & $destroyed$\\
+\hline
+747 & 897.213269565 & 90 & $end\_parse$\\
+\hline
+748 & 897.213333234 & 90 & $start\_save$\\
+\hline
+749 & 897.213336184 & 91 & $start\_parse$\\
+\hline
+750 & 897.217957504 & 90 & $end\_save$\\
+\hline
+751 & 897.217989099 & 90 & $destroyed$\\
+\hline
+752 & 897.324285358 & 91 & $end\_parse$\\
+\hline
+753 & 897.324354695 & 91 & $start\_save$\\
+\hline
+754 & 897.324357537 & 92 & $start\_parse$\\
+\hline
+755 & 897.328976740 & 91 & $end\_save$\\
+\hline
+756 & 897.329018334 & 91 & $destroyed$\\
+\hline
+757 & 897.445251235 & 92 & $end\_parse$\\
+\hline
+758 & 897.445327896 & 92 & $start\_save$\\
+\hline
+759 & 897.445331570 & 93 & $start\_parse$\\
+\hline
+760 & 897.450055146 & 92 & $end\_save$\\
+\hline
+761 & 897.450137271 & 92 & $destroyed$\\
+\hline
+762 & 897.633538023 & 93 & $end\_parse$\\
+\hline
+763 & 897.633582469 & 93 & $start\_save$\\
+\hline
+764 & 897.633584682 & 94 & $start\_parse$\\
+\hline
+765 & 897.638162809 & 93 & $end\_save$\\
+\hline
+766 & 897.638192790 & 93 & $destroyed$\\
+\hline
+767 & 897.748851123 & 94 & $end\_parse$\\
+\hline
+768 & 897.748896781 & 94 & $start\_save$\\
+\hline
+769 & 897.748899670 & 95 & $start\_parse$\\
+\hline
+770 & 897.756434150 & 94 & $end\_save$\\
+\hline
+771 & 897.756468090 & 94 & $destroyed$\\
+\hline
+772 & 897.853732301 & 95 & $end\_parse$\\
+\hline
+773 & 897.853794424 & 96 & $start\_parse$\\
+\hline
+774 & 897.853807395 & 95 & $start\_save$\\
+\hline
+775 & 897.858670140 & 95 & $end\_save$\\
+\hline
+776 & 897.858706873 & 95 & $destroyed$\\
+\hline
+777 & 897.981843686 & 96 & $end\_parse$\\
+\hline
+778 & 897.981897326 & 96 & $start\_save$\\
+\hline
+779 & 897.981898398 & 97 & $start\_parse$\\
+\hline
+780 & 897.986875330 & 96 & $end\_save$\\
+\hline
+781 & 897.986906414 & 96 & $destroyed$\\
+\hline
+782 & 898.193218324 & 97 & $end\_parse$\\
+\hline
+783 & 898.193263308 & 97 & $start\_save$\\
+\hline
+784 & 898.193266666 & 98 & $start\_parse$\\
+\hline
+785 & 898.198208154 & 97 & $end\_save$\\
+\hline
+786 & 898.198237962 & 97 & $destroyed$\\
+\hline
+787 & 898.312992543 & 98 & $end\_parse$\\
+\hline
+788 & 898.313046593 & 98 & $start\_save$\\
+\hline
+789 & 898.313049382 & 99 & $start\_parse$\\
+\hline
+790 & 898.317864800 & 98 & $end\_save$\\
+\hline
+791 & 898.317895553 & 98 & $destroyed$\\
+\hline
+792 & 898.424383941 & 99 & $end\_parse$\\
+\hline
+793 & 898.424427803 & 99 & $start\_save$\\
+\hline
+794 & 898.424431505 & 100 & $start\_parse$\\
+\hline
+795 & 898.429190733 & 99 & $end\_save$\\
+\hline
+796 & 898.429225916 & 99 & $destroyed$\\
+\hline
+797 & 898.554737244 & 100 & $end\_parse$\\
+\hline
+798 & 898.554794204 & 100 & $start\_save$\\
+\hline
+799 & 898.566252825 & 100 & $end\_save$\\
+\hline
+800 & 898.566280909 & 100 & $destroyed$\\
+\hline
