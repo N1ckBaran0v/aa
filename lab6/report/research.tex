@@ -1,0 +1,177 @@
+\chapter{Исследовательская часть}
+
+\section{Параметризация муравьиного алгоритма}
+
+Параметризация проводилась по параметрам $alpha$ --- коэффициенту стадности, $rho$ --- коэффициенту испарения, $T$ --- количеству дней. $alpha$ варьировался от 0.1 до 0.9 с шагом 0.2, $rho$ аналогично, $T$ принимал значения 5, 10, 50, 100, 500. Для параметризации были подготовлены 3 класса данных.
+
+В класс данных $G_1$ входят следующие города: Москва, Стамбул, Вашингтон, Лондон, Пекин, Бразилиа, Камберра, Нью-Дели, Тегеран и Буэнос-Айрес. Связи между городами представлены в таблице~\ref{tab:g1}.
+
+\begin{longtable}{|p{.44\textwidth - 2\tabcolsep}|p{.44\textwidth - 2\tabcolsep}|p{.12\textwidth - 2\tabcolsep}|}
+	\caption{\label{tab:g1}Связи в классе данных $G_1$} \\
+	\hline
+	\makecell{Город 1} & \makecell{Город 2} & \makecell{Время} \\  
+	\hline
+	\makecell{Москва} & \makecell{Стамбул} & \makecell{2.7} \\  
+	\hline
+	\makecell{Москва} & \makecell{Пекин} & \makecell{6.6} \\  
+	\hline
+	\makecell{Стамбул} & \makecell{Вашингтон} & \makecell{12.5} \\  
+	\hline
+	\makecell{Стамбул} & \makecell{Лондон} & \makecell{10.5} \\  
+	\hline
+	\makecell{Вашингтон} & \makecell{Лондон} & \makecell{3} \\  
+	\hline
+	\makecell{Вашингтон} & \makecell{Камберра} & \makecell{17.6} \\  
+	\hline
+	\makecell{Лондон} & \makecell{Камберра} & \makecell{13.2} \\  
+	\hline
+	\makecell{Лондон} & \makecell{Буэнос-Айрес} & \makecell{13.8} \\  
+	\hline
+	\makecell{Пекин} & \makecell{Бразилиа} & \makecell{11.9} \\  
+	\hline
+	\makecell{Пекин} & \makecell{Тегеран} & \makecell{6.6} \\  
+	\hline
+	\makecell{Бразилиа} & \makecell{Тегеран} & \makecell{9.9} \\  
+	\hline
+	\makecell{Бразилиа} & \makecell{Буэнос-Айрес} & \makecell{1.5} \\  
+	\hline
+	\makecell{Камберра} & \makecell{Нью-Дели} & \makecell{4} \\  
+	\hline
+	\makecell{Камберра} & \makecell{Бразилиа} & \makecell{13.6} \\  
+	\hline
+	\makecell{Нью-Дели} & \makecell{Пекин} & \makecell{4} \\  
+	\hline
+	\makecell{Нью-Дели} & \makecell{Москва} & \makecell{8.9} \\  
+	\hline
+	\makecell{Тегеран} & \makecell{Москва} & \makecell{5.4} \\  
+	\hline
+	\makecell{Тегеран} & \makecell{Нью-Дели} & \makecell{6} \\  
+	\hline
+	\makecell{Буэнос-Айрес} & \makecell{Камберра} & \makecell{15} \\  
+	\hline
+	\makecell{Буэнос-Айрес} & \makecell{Нью-Дели} & \makecell{12.2} \\  
+	\hline
+\end{longtable} 
+
+\clearpage
+
+В класс данных $G_2$ входят следующие города: Санкт-Петербург, Шанхай, Нью-Йорк, Сидней, Рио-де-Жанейро, Венеция, Киото, Анталья, Хургада и Ливерпуль. Связи между городами представлены в таблице~\ref{tab:g2}.
+
+\begin{longtable}{|p{.44\textwidth - 2\tabcolsep}|p{.44\textwidth - 2\tabcolsep}|p{.12\textwidth - 2\tabcolsep}|}
+	\caption{\label{tab:g2}Связи в классе данных $G_2$} \\
+	\hline
+	\makecell{Город 1} & \makecell{Город 2} & \makecell{Время} \\  
+	\hline
+	\makecell{Санкт-Петербург} & \makecell{Шанхай} & \makecell{7.8} \\  
+	\hline
+	\makecell{Санкт-Петербург} & \makecell{Анталья} & \makecell{2.4} \\  
+	\hline
+	\makecell{Шанхай} & \makecell{Киото} & \makecell{8} \\  
+	\hline
+	\makecell{Шанхай} & \makecell{Анталья} & \makecell{3} \\  
+	\hline
+	\makecell{Нью-Йорк} & \makecell{Сидней} & \makecell{11.9} \\  
+	\hline
+	\makecell{Нью-Йорк} & \makecell{Ливерпуль} & \makecell{6.4} \\  
+	\hline
+	\makecell{Сидней} & \makecell{Рио-де-Жанейро} & \makecell{6.6} \\  
+	\hline
+	\makecell{Сидней} & \makecell{Хургада} & \makecell{8.4} \\  
+	\hline
+	\makecell{Рио-де-Жанейро} & \makecell{Санкт-Петербург} & \makecell{10} \\  
+	\hline
+	\makecell{Рио-де-Жанейро} & \makecell{Венеция} & \makecell{8} \\  
+	\hline
+	\makecell{Венеция} & \makecell{Киото} & \makecell{7.3} \\  
+	\hline
+	\makecell{Венеция} & \makecell{Шанхай} & \makecell{8.1} \\  
+	\hline
+	\makecell{Киото} & \makecell{Нью-Йорк} & \makecell{4.2} \\  
+	\hline
+	\makecell{Киото} & \makecell{Сидней} & \makecell{2.3} \\  
+	\hline
+	\makecell{Анталья} & \makecell{Хургада} & \makecell{1.4} \\  
+	\hline
+	\makecell{Анталья} & \makecell{Венеция} & \makecell{3.2} \\  
+	\hline
+	\makecell{Хургада} & \makecell{Санкт-Петербург} & \makecell{3.3} \\  
+	\hline
+	\makecell{Хургада} & \makecell{Ливерпуль} & \makecell{4.7} \\  
+	\hline
+	\makecell{Ливерпуль} & \makecell{Киото} & \makecell{8.4} \\  
+	\hline
+	\makecell{Ливерпуль} & \makecell{Рио-де-Жанейро} & \makecell{10.3} \\  
+	\hline
+\end{longtable} 
+
+В класс данных $G_3$ входят следующие города: Воронеж, Воркута, Омск, Владивосток, Челябинск, Нижний Тагил, Тобольск, Рязань, Екатеринбург и Волгоград. Связи между городами представлены в таблице~\ref{tab:g3}.
+
+\clearpage
+
+\begin{longtable}{|p{.44\textwidth - 2\tabcolsep}|p{.44\textwidth - 2\tabcolsep}|p{.12\textwidth - 2\tabcolsep}|}
+	\caption{\label{tab:g3}Связи в классе данных $G_3$} \\
+	\hline
+	\makecell{Город 1} & \makecell{Город 2} & \makecell{Время} \\  
+	\hline
+	\makecell{Воронеж} & \makecell{Рязань} & \makecell{1.5} \\  
+	\hline
+	\makecell{Воронеж} & \makecell{Волгоград} & \makecell{2.5} \\  
+	\hline
+	\makecell{Воркута} & \makecell{Нижний Тагил} & \makecell{6} \\  
+	\hline
+	\makecell{Воркута} & \makecell{Челябинск} & \makecell{6.2} \\  
+	\hline
+	\makecell{Омск} & \makecell{Тобольск} & \makecell{7.8} \\  
+	\hline
+	\makecell{Омск} & \makecell{Екатеринбург} & \makecell{8.1} \\  
+	\hline
+	\makecell{Владивосток} & \makecell{Омск} & \makecell{9} \\  
+	\hline
+	\makecell{Владивосток} & \makecell{Воронеж} & \makecell{11.9} \\  
+	\hline
+	\makecell{Челябинск} & \makecell{Владивосток} & \makecell{7.6} \\  
+	\hline
+	\makecell{Челябинск} & \makecell{Тобольск} & \makecell{6.6} \\  
+	\hline
+	\makecell{Нижний Тагил} & \makecell{Владивосток} & \makecell{8.6} \\  
+	\hline
+	\makecell{Тобольск} & \makecell{Екатеринбург} & \makecell{0.5} \\  
+	\hline
+	\makecell{Тобольск} & \makecell{Рязань} & \makecell{6.9} \\  
+	\hline
+	\makecell{Рязань} & \makecell{Нижний Тагил} & \makecell{7.6} \\  
+	\hline
+	\makecell{Рязань} & \makecell{Волгоград} & \makecell{4.5} \\  
+	\hline
+	\makecell{Екатеринбург} & \makecell{Воркута} & \makecell{5.4} \\  
+	\hline
+	\makecell{Екатеринбург} & \makecell{Воронеж} & \makecell{6.3} \\  
+	\hline
+	\makecell{Волгоград} & \makecell{Челябинск} & \makecell{5.8} \\  
+	\hline
+	\makecell{Волгоград} & \makecell{Омск} & \makecell{8.8} \\  
+	\hline
+\end{longtable} 
+
+В ходе параметризации для каждого набора параметров и каждого класса данных было произведено 10 запусков, в результате которых для класса данных~$G_i$ были вычислены максимальное отклонение~$max_i$, медиана~$med_i$ и среднее арифметическое отклонений~$avg_i$. Результаты параметризации представлены в Приложении А.
+
+Наименьшие отклонения были при минимальных значениях коэффициента стадности~$alpha$ и коэффициента испарения~$rho$. При значениях времени поиска~$t$ 100 и 500 во всех случаях было найдено оптимальное решение.
+
+\section{Замеры времени работы}
+
+Замеры проводились на ноутбуке Acer Swift SF314-510G, процессор 1th Gen Intel® Core™ i7-1165G7. Для замера процессорного времени использовался метод $getCurrentThreadCpuTime$ класса $ThreadMXBean$ из пакета $java.lang.management$~\cite{tmxb}. Сравнения проводились на графах с 2, 4, 6, 8 и 10 вершинами. Для муравьиного алгоритма количество дней~$t$ было принято за 50. Для каждого размера графа было произведено 100 запусков, после чего было взято среднее время работы. Результаты замеров представлены на рисунке~\ref{img:benchmark}.
+
+\FloatBarrier
+\includeimage
+{benchmark} % Имя файла без расширения (файл должен быть расположен в директории inc/img/)
+{f} % Обтекание (без обтекания)
+{h!} % Положение рисунка (см. figure из пакета float)
+{1\textwidth} % Ширина рисунка
+{Результаты замеров времени для алгоритмов решения задачи коммивояжёра} % Подпись рисунка
+\FloatBarrier
+
+В ходе замеров было выявлено, что муравьиный алгоритм работает быстрее алгоритма полного перебора.
+
+\section{Выводы}
+
+В данном разделе была проведена параметризация муравьиного алгоритма, а также были проведены замеры времени работы для алгоритма полного перебора и муравьиного алгоритма.

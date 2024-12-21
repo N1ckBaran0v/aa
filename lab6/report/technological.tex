@@ -1,0 +1,236 @@
+\chapter{Технологическая часть}
+
+\section{Средства реализации}
+
+Для реализации программы был выбран язык программирования Java, так как он содержит все необходимые средства для реализации программы. 
+
+\section{Реализации алгоритмов}
+
+В листингах~\ref{lst:full1}--\ref{lst:full2} представлена реализация алгоритма решения задачи коммивояжёра полным перебором.
+
+\begin{lstlisting}[label=lst:full1,caption=Реализация алгоритма решения задачи коммивояжёра полным перебором (начало)]
+@Override
+public double solve(double @NotNull [] @NotNull [] matrix) {
+	var result = super.solve(matrix);
+	var buffer = new int[matrix.length];
+	var used = new boolean[matrix.length];
+	var sum = .0;
+	var current = 0;
+	var index = 0;
+	var up = false;
+	while (index >= 0) {
+		if (up) {
+			if (index + 1 == matrix.length) {
+				if (matrix[current][0] != -1) {
+					sum += matrix[current][0];
+					if (sum < DAYS + EPSILON && (result == -1 || sum < result)) {
+						result = sum;
+					}
+					sum -= matrix[current][0];
+				}
+				buffer[index] = matrix.length - 1;
+			} else {
+				buffer[index] = 0;
+			}
+			up = false;
+		} else {
+			++buffer[index];
+			if (buffer[index] == matrix.length) {
+\end{lstlisting}
+
+\begin{lstlisting}[label=lst:full2,caption=Реализация алгоритма решения задачи коммивояжёра полным перебором (окончание)]
+				--index;
+				used[current] = false;
+				if (index < 1) {
+					current = 0;
+					sum = 0;
+				} else {
+					current = buffer[index - 1];
+					sum -= matrix[current][buffer[index]];
+				}
+			} else if (matrix[current][buffer[index]] != -1 && !used[buffer[index]]) {
+				sum += matrix[current][buffer[index]];
+				if (sum < DAYS + EPSILON) {
+					used[buffer[index]] = true;
+					current = buffer[index];
+					up = true;
+					++index;
+				} else {
+					sum -= matrix[current][buffer[index]];
+				}
+			}
+		}
+	}
+	return result;
+}
+\end{lstlisting}
+
+В листингах~\ref{lst:ants1}--\ref{lst:ants4} представлена реализация алгоритма решения задачи коммивояжёра полным перебором.
+
+\begin{lstlisting}[label=lst:ants1,caption=Реализация муравьиного алгоритма (начало)]
+@Override
+public double solve(double @NotNull [] @NotNull [] matrix) {
+	var result = super.solve(matrix);
+	var visibility = new double[matrix.length][matrix.length];
+	var results = new double[matrix.length];
+	var routes = new int[matrix.length][matrix.length];
+	var lengths = new int[matrix.length];
+	var delta = new double[matrix.length][matrix.length];
+	var pheromones = new double[matrix.length][matrix.length];
+	var multi = new double[matrix.length][matrix.length];
+\end{lstlisting}
+
+\begin{lstlisting}[label=lst:ants2,caption=Реализация муравьиного алгоритма (продолжение)]
+	var ways = new int[matrix.length];
+	var used = new boolean[matrix.length];
+	var quote = .0;
+	for (var i = 0; i < matrix.length; ++i) {
+		for (var j = 0; j < matrix[i].length; ++j) {
+			pheromones[i][j] = EPSILON;
+			visibility[i][j] = 1 / matrix[i][j];
+			quote += matrix[i][j];
+		}
+	}
+	quote /= (matrix.length - 1) << 1;
+	for (var day = 0; day < days; ++day) {
+		// Morning
+		for (var i = 0; i < matrix.length; ++i) {
+			results[i] = 0;
+			lengths[i] = 0;
+			for (var j = 0; j < matrix.length; ++j) {
+				delta[i][j] = 0;
+				multi[i][j] = Math.pow(pheromones[i][j], alpha) * 	Math.pow(visibility[i][j], beta);
+			}
+		}
+		// Day
+		for (var ant = 0; ant < matrix.length; ++ant) {
+			Arrays.fill(used, false);
+			var flag = true;
+			var curr = ant;
+			while (flag) {
+				if (lengths[ant] + 1 == matrix.length) {
+					if (matrix[curr][ant] != -1 && results[ant] + matrix[curr][ant] < 	DAYS + EPSILON) {
+						results[ant] += matrix[curr][ant];
+						routes[ant][lengths[ant]++] = ant;
+					}
+					flag = false;
+				} else {
+					var count = 0;
+					var sum = .0;
+					for (var i = 0; i < matrix.length; ++i) {
+\end{lstlisting}
+
+\clearpage
+
+\begin{lstlisting}[label=lst:ants3,caption=Реализация муравьиного алгоритма (продолжение)]
+						if (matrix[curr][i] != -1 && !used[i] && i != ant) {
+							ways[count++] = i;
+							sum += multi[curr][i];
+						}
+					}
+					if (count > 0) {
+						var decision = Math.random() * sum;
+						while (decision < sum) {
+							decision += multi[curr][ways[--count]];
+						}
+						if (results[ant] + matrix[curr][ways[count]] < DAYS + EPSILON) {
+							results[ant] += matrix[curr][ways[count]];
+							curr = ways[count];
+							routes[ant][lengths[ant]++] = curr;
+							used[curr] = true;
+						} else {
+							flag = false;
+						}
+					} else {
+						flag = false;
+					}
+				}
+			}
+		}
+		// Evening
+		for (var ant = 0; ant < matrix.length; ++ant) {
+			if (lengths[ant] == matrix.length && (result == -1 || results[ant] < result)) {
+				result = results[ant];
+			}
+		}
+		// Night
+		for (var ant = 0; ant < matrix.length; ++ant) {
+			if (lengths[ant] > 0) {
+				var antDelta = quote / results[ant];
+				for (var i = 0; i < lengths[ant] - 1; ++i) {
+\end{lstlisting}
+
+\clearpage
+
+\begin{lstlisting}[label=lst:ants4,caption=Реализация муравьиного алгоритма (окончание)]
+					delta[routes[ant][i]][routes[ant][i + 1]] += antDelta;
+					delta[routes[ant][i + 1]][routes[ant][i]] += antDelta;
+				}
+				if (lengths[ant] == matrix.length) {
+					delta[routes[ant][matrix.length - 1]][routes[ant][0]] += antDelta;
+					delta[routes[ant][0]][routes[ant][matrix.length - 1]] += antDelta;
+				}
+			}
+		}
+		for (var i = 1; i < matrix.length; ++i) {
+			for (var j = 0; j < i; ++j) {
+				pheromones[i][j] = delta[i][j] + rho * pheromones[i][j];
+				if (pheromones[i][j] < EPSILON) {
+					pheromones[i][j] = EPSILON;
+				}
+				pheromones[j][i] = pheromones[i][j];
+			}
+		}
+	}
+	return result;
+}
+\end{lstlisting}
+
+\section{Функциональное тестирование}
+
+В таблице~\ref{tab:tests1} представлены результаты выполнения функциональных тестов для алгоритма полного перебора. На вход в первой строке программа получает количество маршрутов между городами~$N$ --- натуральное число. В последующих $3 \cdot N$ строках программа получает $N$ описаний маршрутов по 3 строки каждое --- в первой строке идёт название первого города, во второй --- второго, в третьей --- время пути между ними. Названия городов не должны совпадать или быть пустыми, а длина пути не должна быть меньше 0.001. Программа возвращает длину кратчайшего гамильтонова цикла, либо -1, если цикл не найден или все существующие циклы занимают больше 80 дней. 
+
+\begin{longtable}{|p{.4\textwidth - 2\tabcolsep}|p{.3\textwidth - 2\tabcolsep}|p{.3\textwidth - 2\tabcolsep}|}
+	\caption{\label{tab:tests1}Результаты выполнения функциональных тестов} \\
+	\hline
+	\makecell{Входные данные} & \makecell{Ожидаемый вывод} & \makecell{Полученный вывод} \\  
+	\hline
+	\makecell{} & \makecell{Ошибка. Неверный\\формат ввода.} & \makecell{Ошибка. Неверный\\формат ввода.} \\  
+	\hline
+	\makecell{-1} & \makecell{Ошибка. Неверный\\формат ввода.} & \makecell{Ошибка. Неверный\\формат ввода.} \\  
+	\hline
+	\makecell{1\\Омск\\Омск} & \makecell{Ошибка. Неверный\\формат ввода.} & \makecell{Ошибка. Неверный\\формат ввода.} \\  
+	\hline
+	\makecell{1\\Воронеж\\Москва\\-3} & \makecell{Ошибка. Неверный\\формат ввода.} & \makecell{Ошибка. Неверный\\формат ввода.} \\  
+	\hline
+	\makecell{1\\Воронеж\\Москва\\0.25} & \makecell{0.500} & \makecell{0.500} \\  
+	\hline
+	\makecell{2\\Воронеж\\Москва\\0.25\\Москва\\Казань\\0.5} & \makecell{-1.000} & \makecell{-1.000} \\  
+	\hline
+\end{longtable}
+
+В таблице~\ref{tab:tests2}--\ref{tab:tests3} представлены результаты выполнения функциональных тестов для муравьиного алгоритма. На вход в первой строке программа получает количество маршрутов между городами~$N$ --- натуральное число. В последующих $3 \cdot N$ строках программа получает $N$ описаний маршрутов по 3 строки каждое --- в первой строке идёт название первого города, во второй --- второго, в третьей --- время пути между ними. Названия городов не должны совпадать или быть пустыми, а длина пути не должна быть меньше 0.001. Вместо результата была проведена проверка полученного маршрута. Маршруты были получены из матрицы~$routes$ при помощи отладчика. Корректным считается маршрут, в котором посещены все вершины и в котором нет переходов по несуществующим рёбрам. Все полученные маршруты оказались корректными.
+
+\begin{longtable}{|p{.6\textwidth - 2\tabcolsep}|p{.4\textwidth - 2\tabcolsep}|}
+	\caption{\label{tab:tests2}Результаты выполнения функциональных тестов (начало)} \\
+	\hline
+	\makecell{Входные данные} & \makecell{Маршрут} \\  
+	\hline
+	\makecell{7\\0\\1\\10\\1\\2\\10\\2\\3\\15\\3\\4\\35\\0\\4\\10\\4\\1\\20\\3\\0\\20} & \makecell{[ 4, 1, 2, 3, 0 ]} \\  
+	\hline
+\end{longtable}
+
+\clearpage
+
+\begin{longtable}{|p{.6\textwidth - 2\tabcolsep}|p{.4\textwidth - 2\tabcolsep}|}
+	\caption{\label{tab:tests3}Результаты выполнения функциональных тестов (окончание)} \\
+	\hline
+	\makecell{Входные данные} & \makecell{Маршрут} \\  
+	\hline
+	\makecell{5\\0\\1\\1\\1\\2\\2\\2\\3\\3\\3\\4\\4\\4\\0\\5} & \makecell{[ 1, 2, 3, 4, 0 ]} \\  
+	\hline
+\end{longtable}
+
+\section*{Выводы}
+
+В данном разделе были выбраны средства реализации, разработана спроектированная программа, представлен графический интерфейс и проведено тестирование.

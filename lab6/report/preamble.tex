@@ -1,0 +1,94 @@
+% пакеты
+\usepackage{csquotes}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Библиография
+\NewBibliographyString{accessmode}
+\DeclareFieldFormat{url}{\bibstring{accessmode}\addcolon\space\url{#1}}
+\DeclareFieldFormat{title}{#1}
+\DefineBibliographyStrings{russian}{
+accessmode={Режим доступа:},
+urlseen={дата обращения:}
+}
+% скобки после пунктов
+\setenumerate[1]{label={ \arabic*)}}
+\usepackage{enumitem}
+
+% математика в листингах
+\lstset{
+mathescape=true
+}
+
+% \FloatBarrier
+\usepackage{placeins}
+
+% $ в листингах
+\newcommand{\dlr}{\mbox{\textdollar}}
+
+% Тире в itemize
+\renewcommand\labelitemi{---}
+
+% \foreach
+\usepackage{pgffor}
+
+% Длинные таблицы
+\usepackage{longtable}
+
+% Картинки
+\newcommand{\img}[3] {
+\begin{figure}[t!]
+    \center{\includegraphics[height=#1]{inc/img/#2}}
+    \caption{#3}
+    \label{img:#2}
+\end{figure}
+}
+\newcommand{\imgw}[3] {
+\begin{figure}[h!]
+    \center{\includegraphics[width=#1]{inc/img/#2}}
+    \caption{#3}
+    \label{img:#2}
+\end{figure}
+}
+\newcommand{\boximg}[3] {
+\begin{figure}[h]
+    \center{\fbox{\includegraphics[height=#1]{inc/img/#2}}}
+    \caption{#3}
+    \label{img:#2}
+\end{figure}
+}
+
+% АА в сокращенном виде
+
+\newcommand{\uchapter}[2] {
+	\chapter*{#1}
+	\addcontentsline{toc}{chapter}{#1}
+}
+
+\newcommand{\usection}[2] {
+	\section*{#1}
+	\addcontentsline{toc}{section}{#1}
+}
+
+\usepackage{pdfpages}
+\usepackage{makecell}
+\usepackage{mathtools}
+
+\lstset{ %
+	language=java,                 % выбор языка для подсветки (здесь это Java)
+	basicstyle=\small\ttfamily, % размер и начертание шрифта для подсветки кода
+	numbers=none,               % где поставить нумерацию строк (слева\справа)
+	numberstyle=\small,           % размер шрифта для номеров строк
+	stepnumber=1,                   % размер шага между двумя номерами строк
+	%	numbersep=5pt,                % как далеко отстоят номера строк от подсвечиваемого кода
+	showspaces=false,            % показывать или нет пробелы специальными отступами
+	showstringspaces=false,      % показывать или нет пробелы в строках
+	showtabs=false,             % показывать или нет табуляцию в строках
+	frame=single,              % рисовать рамку вокруг кода
+	tabsize=4,                 % размер табуляции по умолчанию равен 2 пробелам
+	captionpos=t,              % позиция заголовка вверху [t] или внизу [b] 
+	breaklines=true,           % автоматически переносить строки (да\нет)
+	breakatwhitespace=false, % переносить строки только если есть пробел
+	escapeinside={\#*}{*)},   % если нужно добавить комментарии в коде
+	abovecaptionskip=-5pt                   % Показать название подгружаемого файла
+}
