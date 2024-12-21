@@ -1,0 +1,9 @@
+*.out 
+*.toc 
+*.aux
+*.log 
+*.bbl 
+*.blg 
+*.bcf 
+*.xml
+*.syntex*
